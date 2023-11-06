@@ -16,6 +16,8 @@
 		79A8C4542AF974460072F483 /* FixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C4532AF974460072F483 /* FixTests.swift */; };
 		79A8C45E2AF974460072F483 /* FixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C45D2AF974460072F483 /* FixUITests.swift */; };
 		79A8C4602AF974460072F483 /* FixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C45F2AF974460072F483 /* FixUITestsLaunchTests.swift */; };
+		79A8C46D2AF978FB0072F483 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A8C46C2AF978FB0072F483 /* Login.storyboard */; };
+		79A8C46F2AF9792A0072F483 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A8C46E2AF9792A0072F483 /* Signup.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		79A8C4592AF974460072F483 /* FixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A8C45D2AF974460072F483 /* FixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixUITests.swift; sourceTree = "<group>"; };
 		79A8C45F2AF974460072F483 /* FixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79A8C46C2AF978FB0072F483 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		79A8C46E2AF9792A0072F483 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				79A8C43E2AF974430072F483 /* SceneDelegate.swift */,
 				79A8C4402AF974430072F483 /* ViewController.swift */,
 				79A8C4422AF974430072F483 /* Main.storyboard */,
+				79A8C46C2AF978FB0072F483 /* Login.storyboard */,
+				79A8C46E2AF9792A0072F483 /* Signup.storyboard */,
 				79A8C4452AF974460072F483 /* Assets.xcassets */,
 				79A8C4472AF974460072F483 /* LaunchScreen.storyboard */,
 				79A8C44A2AF974460072F483 /* Info.plist */,
@@ -231,8 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A8C46D2AF978FB0072F483 /* Login.storyboard in Resources */,
 				79A8C4492AF974460072F483 /* LaunchScreen.storyboard in Resources */,
 				79A8C4462AF974460072F483 /* Assets.xcassets in Resources */,
+				79A8C46F2AF9792A0072F483 /* Signup.storyboard in Resources */,
 				79A8C4442AF974430072F483 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
