@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		799256E52B03CC8F00AD0A69 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256E42B03CC8F00AD0A69 /* login.swift */; };
+		799256EB2B06B01500AD0A69 /* individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256EA2B06B01500AD0A69 /* individual.swift */; };
 		79A8C43D2AF974430072F483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C43C2AF974430072F483 /* AppDelegate.swift */; };
 		79A8C43F2AF974430072F483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C43E2AF974430072F483 /* SceneDelegate.swift */; };
 		79A8C4412AF974430072F483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C4402AF974430072F483 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		799256E42B03CC8F00AD0A69 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		799256EA2B06B01500AD0A69 /* individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = individual.swift; sourceTree = "<group>"; };
 		79A8C4392AF974430072F483 /* Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A8C43C2AF974430072F483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79A8C43E2AF974430072F483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,11 +111,13 @@
 				79A8C43E2AF974430072F483 /* SceneDelegate.swift */,
 				79A8C4402AF974430072F483 /* ViewController.swift */,
 				79A8C4422AF974430072F483 /* Main.storyboard */,
+				799256EA2B06B01500AD0A69 /* individual.swift */,
 				79A8C46C2AF978FB0072F483 /* Login.storyboard */,
 				79A8C46E2AF9792A0072F483 /* Signup.storyboard */,
 				79A8C4452AF974460072F483 /* Assets.xcassets */,
 				79A8C4472AF974460072F483 /* LaunchScreen.storyboard */,
 				79A8C44A2AF974460072F483 /* Info.plist */,
+				799256E42B03CC8F00AD0A69 /* login.swift */,
 			);
 			path = Fix;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 				79A8C4412AF974430072F483 /* ViewController.swift in Sources */,
 				79A8C43D2AF974430072F483 /* AppDelegate.swift in Sources */,
 				79A8C43F2AF974430072F483 /* SceneDelegate.swift in Sources */,
+				799256E52B03CC8F00AD0A69 /* login.swift in Sources */,
+				799256EB2B06B01500AD0A69 /* individual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

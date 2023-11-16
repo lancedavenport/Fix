@@ -11,7 +11,7 @@
         <!--Login-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController title="Login" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController title="Login" id="Y6W-OH-hqX" customClass="ViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,6 +21,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" smartInsertDeleteType="yes" textContentType="email"/>
+                                <connections>
+                                    <action selector="text:" destination="HnN-P5-lQi" eventType="editingDidEnd" id="cxR-FI-iZ6"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sA4-vu-J56">
                                 <rect key="frame" x="52" y="310" width="310" height="34"/>
@@ -43,6 +46,10 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Signin" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="Signup:" destination="HnN-P5-lQi" eventType="touchUpInside" id="VnZ-r0-pyD"/>
+                                    <action selector="signin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="61L-FL-4HR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bj-EC-fMi">
                                 <rect key="frame" x="158" y="74" width="97" height="96"/>
@@ -51,15 +58,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skg-0c-8TE">
+                                <rect key="frame" x="20" y="541" width="342" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="bBZ-tj-EMc"/>
+                    <connections>
+                        <outlet property="email" destination="jqR-Ka-EGp" id="ZVL-AO-NVU"/>
+                        <outlet property="password" destination="sA4-vu-J56" id="uro-au-H2F"/>
+                        <outlet property="test" destination="skg-0c-8TE" id="D8f-uP-J2K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="HnN-P5-lQi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-68.372093023255815" y="-11.587982832618026"/>
+            <point key="canvasLocation" x="-69.565217391304358" y="-12.053571428571429"/>
         </scene>
     </scenes>
     <resources>

@@ -1,23 +1,23 @@
 //
-//  ViewController.swift
+//  login.swift
 //  Fix
 //
-//  Created by Lance Davenport on 11/6/23.
+//  Created by Lance Davenport on 11/14/23.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class login: UIViewController {
 
-    
     @IBOutlet weak var email: UITextField!
     
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var test: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
     }
 
     @IBAction func signup(_ sender: UIButton) {
@@ -25,6 +25,6 @@ class ViewController: UIViewController {
         test.text = test1
     }
 
-    
 }
+
 
