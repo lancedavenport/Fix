@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03FDAB2E2B0808A3004BF95E /* UserEnvironment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FDAB2C2B0808A3004BF95E /* UserEnvironment.storyboard */; };
 		799256E52B03CC8F00AD0A69 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256E42B03CC8F00AD0A69 /* login.swift */; };
 		799256EB2B06B01500AD0A69 /* individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256EA2B06B01500AD0A69 /* individual.swift */; };
 		799256ED2B06B55500AD0A69 /* save_load_json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256EC2B06B55500AD0A69 /* save_load_json.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03FDAB2D2B0808A3004BF95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserEnvironment.storyboard; sourceTree = "<group>"; };
 		799256E42B03CC8F00AD0A69 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		799256EA2B06B01500AD0A69 /* individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = individual.swift; sourceTree = "<group>"; };
 		799256EC2B06B55500AD0A69 /* save_load_json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = save_load_json.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				79A8C46E2AF9792A0072F483 /* Signup.storyboard */,
 				79A8C4452AF974460072F483 /* Assets.xcassets */,
 				79A8C4472AF974460072F483 /* LaunchScreen.storyboard */,
+				03FDAB2C2B0808A3004BF95E /* UserEnvironment.storyboard */,
 				79A8C44A2AF974460072F483 /* Info.plist */,
 				799256E42B03CC8F00AD0A69 /* login.swift */,
 				799256EC2B06B55500AD0A69 /* save_load_json.swift */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A8C46D2AF978FB0072F483 /* Login.storyboard in Resources */,
+				03FDAB2E2B0808A3004BF95E /* UserEnvironment.storyboard in Resources */,
 				79A8C4492AF974460072F483 /* LaunchScreen.storyboard in Resources */,
 				79A8C4462AF974460072F483 /* Assets.xcassets in Resources */,
 				79A8C46F2AF9792A0072F483 /* Signup.storyboard in Resources */,
@@ -317,6 +321,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		03FDAB2C2B0808A3004BF95E /* UserEnvironment.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FDAB2D2B0808A3004BF95E /* Base */,
+			);
+			name = UserEnvironment.storyboard;
+			sourceTree = "<group>";
+		};
 		79A8C4422AF974430072F483 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
