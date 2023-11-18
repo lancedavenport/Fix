@@ -16,7 +16,6 @@
 		79A8C4412AF974430072F483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C4402AF974430072F483 /* ViewController.swift */; };
 		79A8C4442AF974430072F483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A8C4422AF974430072F483 /* Main.storyboard */; };
 		79A8C4462AF974460072F483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A8C4452AF974460072F483 /* Assets.xcassets */; };
-		79A8C4492AF974460072F483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A8C4472AF974460072F483 /* LaunchScreen.storyboard */; };
 		79A8C4542AF974460072F483 /* FixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C4532AF974460072F483 /* FixTests.swift */; };
 		79A8C45E2AF974460072F483 /* FixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C45D2AF974460072F483 /* FixUITests.swift */; };
 		79A8C4602AF974460072F483 /* FixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C45F2AF974460072F483 /* FixUITestsLaunchTests.swift */; };
@@ -52,7 +51,6 @@
 		79A8C4402AF974430072F483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79A8C4432AF974430072F483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79A8C4452AF974460072F483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79A8C4482AF974460072F483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79A8C44A2AF974460072F483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79A8C44F2AF974460072F483 /* FixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A8C4532AF974460072F483 /* FixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTests.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				79A8C46C2AF978FB0072F483 /* Login.storyboard */,
 				79A8C46E2AF9792A0072F483 /* Signup.storyboard */,
 				79A8C4452AF974460072F483 /* Assets.xcassets */,
-				79A8C4472AF974460072F483 /* LaunchScreen.storyboard */,
 				03FDAB2C2B0808A3004BF95E /* UserEnvironment.storyboard */,
 				79A8C44A2AF974460072F483 /* Info.plist */,
 				799256E42B03CC8F00AD0A69 /* login.swift */,
@@ -251,7 +248,6 @@
 			files = (
 				79A8C46D2AF978FB0072F483 /* Login.storyboard in Resources */,
 				03FDAB2E2B0808A3004BF95E /* UserEnvironment.storyboard in Resources */,
-				79A8C4492AF974460072F483 /* LaunchScreen.storyboard in Resources */,
 				79A8C4462AF974460072F483 /* Assets.xcassets in Resources */,
 				79A8C46F2AF9792A0072F483 /* Signup.storyboard in Resources */,
 				79A8C4442AF974430072F483 /* Main.storyboard in Resources */,
@@ -335,14 +331,6 @@
 				79A8C4432AF974430072F483 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		79A8C4472AF974460072F483 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79A8C4482AF974460072F483 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
