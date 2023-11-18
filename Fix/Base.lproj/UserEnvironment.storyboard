@@ -19,7 +19,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Setting" id="q23-OF-kMO"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="gearshape.circle" catalog="system" id="q23-OF-kMO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -35,7 +35,7 @@
                         <viewLayoutGuide key="safeArea" id="7t0-Vs-Dac"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="YEl-Wc-C4s"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="circle.hexagonpath" catalog="system" id="YEl-Wc-C4s"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae7-VY-oGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
                         <viewLayoutGuide key="safeArea" id="Cmz-L5-Mgu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Friends" id="Wsu-a0-oVq"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="person.2.crop.square.stack" catalog="system" id="Wsu-a0-oVq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDn-k7-YWG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="d5x-ry-EIy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fix" id="kU2-5Q-SC5"/>
+                    <tabBarItem key="tabBarItem" title="Fix" image="bubble.right.circle" catalog="system" id="kU2-5Q-SC5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMu-49-hWj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +79,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1JQ-t3-q3m" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oqw-Rk-4ff">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -95,6 +96,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bubble.right.circle" catalog="system" width="128" height="123"/>
+        <image name="circle.hexagonpath" catalog="system" width="128" height="115"/>
+        <image name="gearshape.circle" catalog="system" width="128" height="123"/>
+        <image name="person.2.crop.square.stack" catalog="system" width="105" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
