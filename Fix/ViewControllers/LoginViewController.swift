@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         errorLabel.alpha = 0
+        passwordTextField.isSecureTextEntry.toggle()
     }
     
     @IBAction func loginTapped(_ sender: Any) {
@@ -43,6 +44,10 @@ class LoginViewController: UIViewController {
                 self.showError(self.errorLabel, error.localizedDescription)
             } else {
                 // store user id and info
+                
+                // hide navigation bar
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+                
                 // navigate to userEnvironment view
             }
         }

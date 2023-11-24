@@ -29,6 +29,8 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         errorLabel.alpha = 0
+        passWordTextField.isSecureTextEntry.toggle()
+        comfirmPasswordTextField.isSecureTextEntry.toggle()
     }
     
     // Check fields before navigating to more info screen. Show error message if needed.
@@ -78,11 +80,27 @@ class SignUpViewController: UIViewController {
             } else {
                 // success creating user, store user info to database
                 let db = Firestore.firestore()
-                db.collection("users").addDocument(data: ["first_name": firstName, "last_name": lastName, "uid": authResult!.user.uid]) { error in
+                let uid = authResult!.user.uid
+                let dbCollection = db.collection("users")
+                
+                let userData: [String: Any] = [
+                    "first_name": firstName,
+                    "last_name": lastName,
+                    "uid": uid
+                ]
+                
+                dbCollection.document(uid).setData(userData) { error in
                     if let error = error {
                         self.showError(self.errorLabel, "User created but failed to save data to db: \(error.localizedDescription)")
+                    } else {
+                        self.errorLabel.text = "Successfully created and added new user data to db."
+                        self.errorLabel.textColor = UIColor.black
+                        self.errorLabel.alpha = 1
                     }
                 }
+                //hide navigation bar
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+                // go to user environment
                 self.transitonToUserEnvironment()
             }
         }
@@ -96,6 +114,7 @@ class SignUpViewController: UIViewController {
     
     // Helper functions
     func showError(_ label: UILabel, _ errorMessage: String) {
+        label.textColor = UIColor.red
         label.text = errorMessage
         label.alpha = 1
     }
