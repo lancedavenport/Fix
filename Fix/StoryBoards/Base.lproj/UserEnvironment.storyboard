@@ -28,7 +28,7 @@
         <!--Feed-->
         <scene sceneID="Ix4-U5-aah">
             <objects>
-                <viewController id="qbP-IU-cbM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="feedViewController" id="qbP-IU-cbM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0PU-Xz-1gQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
