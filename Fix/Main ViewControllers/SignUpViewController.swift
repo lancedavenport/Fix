@@ -25,6 +25,10 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    var uid: String? = nil
+    
+    let toUserEnvironmentSegue = "toUserEnvironmentSegue"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -98,23 +102,34 @@ class SignUpViewController: UIViewController {
                         self.errorLabel.alpha = 1
                     }
                 }
+                
                 //hide navigation bar
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
-                // go to user environment
-                self.transitonToUserEnvironment()
+                // navigate to userEnvironment view and transfer user uid to userEnvironment
+                self.uid = uid
+                self.goToUserEnvironment()
             }
         }
     }
     
-    // Go to userEnvironment
-    func transitonToUserEnvironment() {
-        
+    func goToUserEnvironment() {
+        performSegue(withIdentifier: toUserEnvironmentSegue, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == toUserEnvironmentSegue {
+            if let tabBarVC = segue.destination as? UserEnvironmentTabBarController {
+                tabBarVC.uid = uid
+            } else {
+                return
+            }
+        }
     }
     
     
-    // Helper functions
+    // Helper methods
     func showError(_ label: UILabel, _ errorMessage: String) {
-        label.textColor = UIColor.red
+        label.textColor = .systemRed
         label.text = errorMessage
         label.alpha = 1
     }
