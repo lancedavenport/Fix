@@ -89,7 +89,75 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6A-x6-Nno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3430" y="-109"/>
+            <point key="canvasLocation" x="3702" y="-90"/>
+        </scene>
+        <!--Sign Up Bio View Controller-->
+        <scene sceneID="sjv-9P-FbV">
+            <objects>
+                <viewController id="ghP-4t-w2d" customClass="SignUpBioViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W2z-2V-nmU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="BfX-Ip-WfP">
+                                <rect key="frame" x="135" y="703" width="120" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextTapped:" destination="ghP-4t-w2d" eventType="touchUpInside" id="19F-nk-V6X"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Something about yourself (Optional)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Y7l-ov-cjC">
+                                <rect key="frame" x="20" y="199" width="350" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Tell Us More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cu-bO-eiy">
+                                <rect key="frame" x="134.33333333333334" y="141" width="121.66666666666666" height="27.666666666666657"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a profile picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEH-NJ-ziO">
+                                <rect key="frame" x="104" y="307" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PL1-tD-92k">
+                                <rect key="frame" x="75" y="358" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MOD-DP-mmU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MOD-DP-mmU" firstAttribute="trailing" secondItem="Y7l-ov-cjC" secondAttribute="trailing" constant="20" id="8dh-H3-2ga"/>
+                            <constraint firstItem="7cu-bO-eiy" firstAttribute="top" secondItem="MOD-DP-mmU" secondAttribute="top" constant="50" id="Epk-Z6-azY"/>
+                            <constraint firstItem="Y7l-ov-cjC" firstAttribute="leading" secondItem="MOD-DP-mmU" secondAttribute="leading" constant="20" id="HED-eL-T42"/>
+                            <constraint firstItem="PL1-tD-92k" firstAttribute="top" secondItem="hEH-NJ-ziO" secondAttribute="bottom" constant="30" id="IAh-hW-KpA"/>
+                            <constraint firstItem="hEH-NJ-ziO" firstAttribute="centerX" secondItem="W2z-2V-nmU" secondAttribute="centerX" id="bVj-op-2Zu"/>
+                            <constraint firstItem="hEH-NJ-ziO" firstAttribute="top" secondItem="Y7l-ov-cjC" secondAttribute="bottom" constant="50" id="dEH-FW-UcM"/>
+                            <constraint firstItem="PL1-tD-92k" firstAttribute="centerX" secondItem="W2z-2V-nmU" secondAttribute="centerX" id="kpX-69-q2y"/>
+                            <constraint firstItem="Y7l-ov-cjC" firstAttribute="top" secondItem="7cu-bO-eiy" secondAttribute="bottom" constant="30" id="lBm-wp-zHh"/>
+                            <constraint firstItem="7cu-bO-eiy" firstAttribute="centerX" secondItem="W2z-2V-nmU" secondAttribute="centerX" id="s9e-kq-QfU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S2S-oU-FwU"/>
+                    <connections>
+                        <outlet property="userBioTextField" destination="Y7l-ov-cjC" id="ZJ5-S3-qnX"/>
+                        <segue destination="hqg-cb-1jq" kind="show" identifier="toUserEnvironmentSegue" id="OhO-ue-34x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6EZ-K0-3Ij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2933.8461538461538" y="344.07582938388623"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Ejb-al-T0G">
@@ -290,7 +358,7 @@
                         <outlet property="lastNameTextField" destination="pVq-HW-PAa" id="Sfc-0s-St5"/>
                         <outlet property="passWordTextField" destination="jDr-yW-0uO" id="OMK-ha-Vin"/>
                         <outlet property="signUpButton" destination="vDl-u6-w17" id="nNJ-ja-Hcy"/>
-                        <segue destination="hqg-cb-1jq" kind="show" identifier="toUserEnvironmentSegue" id="xg5-j2-Fgh"/>
+                        <segue destination="ghP-4t-w2d" kind="show" identifier="toSignUpBioSegue" id="phz-c5-H96"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3z-oC-xKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -299,14 +367,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wAy-yz-gNo"/>
+        <segue reference="OhO-ue-34x"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
