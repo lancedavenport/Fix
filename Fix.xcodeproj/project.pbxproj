@@ -42,6 +42,7 @@
 		03B4D4FB2B130C49009ADE1A /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4FA2B130C49009ADE1A /* FriendsViewController.swift */; };
 		03B4D4FD2B130C5D009ADE1A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4FC2B130C5D009ADE1A /* MessageViewController.swift */; };
 		03B4D4FF2B131549009ADE1A /* UserEnvironmentTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4FE2B131549009ADE1A /* UserEnvironmentTabBarController.swift */; };
+		03BBDC482B1561DE00597FBE /* SignUpBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBDC472B1561DE00597FBE /* SignUpBioViewController.swift */; };
 		03FDAB2E2B0808A3004BF95E /* UserEnvironment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FDAB2C2B0808A3004BF95E /* UserEnvironment.storyboard */; };
 		799256E52B03CC8F00AD0A69 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256E42B03CC8F00AD0A69 /* login.swift */; };
 		799256EB2B06B01500AD0A69 /* individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256EA2B06B01500AD0A69 /* individual.swift */; };
@@ -82,6 +83,7 @@
 		03B4D4FA2B130C49009ADE1A /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		03B4D4FC2B130C5D009ADE1A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		03B4D4FE2B131549009ADE1A /* UserEnvironmentTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEnvironmentTabBarController.swift; sourceTree = "<group>"; };
+		03BBDC472B1561DE00597FBE /* SignUpBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBioViewController.swift; sourceTree = "<group>"; };
 		03FDAB2D2B0808A3004BF95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserEnvironment.storyboard; sourceTree = "<group>"; };
 		799256E42B03CC8F00AD0A69 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		799256EA2B06B01500AD0A69 /* individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = individual.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			children = (
 				0362F2302B0F53D3000B7A1C /* SignUpViewController.swift */,
 				0362F2322B0F6250000B7A1C /* LoginViewController.swift */,
+				03BBDC472B1561DE00597FBE /* SignUpBioViewController.swift */,
 			);
 			path = "Main ViewControllers";
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				799256ED2B06B55500AD0A69 /* save_load_json.swift in Sources */,
 				03B4D4FF2B131549009ADE1A /* UserEnvironmentTabBarController.swift in Sources */,
 				03B4D4B52B12F328009ADE1A /* FeedViewController.swift in Sources */,
+				03BBDC482B1561DE00597FBE /* SignUpBioViewController.swift in Sources */,
 				79A8C4412AF974430072F483 /* ViewController.swift in Sources */,
 				0362F2312B0F53D3000B7A1C /* SignUpViewController.swift in Sources */,
 				79A8C43D2AF974430072F483 /* AppDelegate.swift in Sources */,

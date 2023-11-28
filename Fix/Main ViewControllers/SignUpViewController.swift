@@ -27,7 +27,7 @@ class SignUpViewController: UIViewController {
     
     var uid: String? = nil
     
-    let toUserEnvironmentSegue = "toUserEnvironmentSegue"
+    let toSignUpBioSegue = "toSignUpBioSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,19 +107,19 @@ class SignUpViewController: UIViewController {
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
                 // navigate to userEnvironment view and transfer user uid to userEnvironment
                 self.uid = uid
-                self.goToUserEnvironment()
+                self.goToSignUpBio()
             }
         }
     }
     
-    func goToUserEnvironment() {
-        performSegue(withIdentifier: toUserEnvironmentSegue, sender: self)
+    func goToSignUpBio() {
+        performSegue(withIdentifier: toSignUpBioSegue, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == toUserEnvironmentSegue {
-            if let tabBarVC = segue.destination as? UserEnvironmentTabBarController {
-                tabBarVC.uid = uid
+        if segue.identifier == toSignUpBioSegue {
+            if let signUpBioVC = segue.destination as? SignUpBioViewController {
+                signUpBioVC.uid = uid
             } else {
                 return
             }
