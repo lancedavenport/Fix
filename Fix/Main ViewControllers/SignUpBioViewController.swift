@@ -13,7 +13,7 @@ import FirebaseStorage
 
 class SignUpBioViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    var uid: String? = "123"
+    var uid: String? = nil
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -27,6 +27,7 @@ class SignUpBioViewController: UIViewController, UINavigationControllerDelegate,
         
         // Do any additional setup after loading the view.
         self.storageRef = storage.reference()
+        self.uid = Auth.auth().currentUser!.uid
     }
     
     @IBAction func saveImage(_ sender: UIButton) {
@@ -49,8 +50,9 @@ class SignUpBioViewController: UIViewController, UINavigationControllerDelegate,
 
             var data = Data()
             data = imageView.image!.jpegData(compressionQuality: 0.8)!
-            let filePath = "\(Auth.auth().currentUser!.uid )/\("userPhoto")"
+            let filePath = "\(Auth.auth().currentUser!.uid)/\("userPhoto")"
             let metaData = StorageMetadata()
+
             metaData.contentType = "image/jpg"
             self.storageRef?.child(filePath).putData(data, metadata: metaData){(metaData,error) in
                 if let error = error {
@@ -58,11 +60,6 @@ class SignUpBioViewController: UIViewController, UINavigationControllerDelegate,
                     return
                 }
             }
-            
-            print(image)
-        } else
-            {
-            // Error
         }
         
         self.dismiss(animated: true, completion: nil)
@@ -70,7 +67,6 @@ class SignUpBioViewController: UIViewController, UINavigationControllerDelegate,
     // store user entered bio, etc, then navigate to userEnvironment TabController
     @IBAction func nextTapped(_ sender: Any) {
         // store user Bio info to database
-        
         goToUserEnvironment()
     }
     
