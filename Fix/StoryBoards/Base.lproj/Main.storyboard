@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="LGK-cp-Uhl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dLc-79-Lpu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="dLc-79-Lpu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fff-1y-Z7V">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -30,7 +30,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
         <!--Sign Up Bio View Controller-->
         <scene sceneID="sjv-9P-FbV">
             <objects>
-                <viewController id="ghP-4t-w2d" customClass="SignUpBioViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ghP-4t-w2d" customClass="SignUpBioViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W2z-2V-nmU">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,6 +108,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="nextTapped:" destination="ghP-4t-w2d" eventType="touchUpInside" id="19F-nk-V6X"/>
+                                    <action selector="saveData:" destination="ghP-4t-w2d" eventType="touchUpInside" id="ca3-l1-Eg2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Something about yourself (Optional)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Y7l-ov-cjC">
@@ -142,6 +143,13 @@
                                     <action selector="saveImage:" destination="ghP-4t-w2d" eventType="touchUpInside" id="l0Q-Jg-iyu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-cm-tfY">
+                                <rect key="frame" x="174" y="616" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MOD-DP-mmU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -165,7 +173,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="S2S-oU-FwU"/>
                     <connections>
+                        <outlet property="errorText" destination="pkc-cm-tfY" id="IX8-2c-owx"/>
                         <outlet property="imageView" destination="PL1-tD-92k" id="lGC-3M-lLw"/>
+                        <outlet property="userBio" destination="Y7l-ov-cjC" id="8c4-xg-kH5"/>
                         <segue destination="hqg-cb-1jq" kind="show" identifier="toUserEnvironmentSegue" id="OhO-ue-34x"/>
                     </connections>
                 </viewController>
@@ -176,7 +186,7 @@
         <!--Login View Controller-->
         <scene sceneID="Ejb-al-T0G">
             <objects>
-                <viewController id="XSI-ZJ-X36" customClass="LoginViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="XSI-ZJ-X36" customClass="LoginViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gNu-Qc-6J8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -278,7 +288,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="NkA-sH-jwU">
             <objects>
-                <viewController id="Ge2-v1-XUR" customClass="SignUpViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Ge2-v1-XUR" customClass="SignUpViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0V1-I1-8Ll">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -386,6 +396,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

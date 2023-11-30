@@ -90,7 +90,8 @@ class SignUpViewController: UIViewController {
                 let userData: [String: Any] = [
                     "first_name": firstName,
                     "last_name": lastName,
-                    "uid": uid
+                    "uid": uid,
+                    "bio": ""
                 ]
                 
                 dbCollection.document(uid).setData(userData) { error in

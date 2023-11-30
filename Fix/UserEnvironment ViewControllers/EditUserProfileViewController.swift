@@ -15,6 +15,7 @@ class EditUserProfileViewController: UIViewController, UINavigationControllerDel
     
     var uid: String? = nil
     
+
     @IBOutlet weak var errorText: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var confirmPassword: UITextField!
@@ -73,16 +74,21 @@ class EditUserProfileViewController: UIViewController, UINavigationControllerDel
     
     @IBAction func confirmChanges(_ sender: Any) {
         if !isTextFieldEmpty(editPassword) && isTextFieldEmpty(confirmPassword){
-            //showError(errorLabel, "Please confirm your password")
+            showError(errorText, "Please confirm your password")
             return
         }
     
         if !isTextFieldEmpty(editPassword) && !isTextFieldEmpty(confirmPassword){
+
             if let pw = editPassword.text, let cpw = confirmPassword.text, pw != cpw {
                 showError(errorText, "Your password comfirmation does not match your password")
                 return
             } else {
                 let password = confirmPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                if !isPasswordValid(password) {
+                    showError(errorText, "Password need to contain at least one digit, one upper case letter, one lower case letter, and be 8 characters long")
+                    return
+                }
                 
                 Auth.auth().currentUser?.updatePassword(to: password) { (error) in
                     if let error = error {
@@ -109,7 +115,7 @@ class EditUserProfileViewController: UIViewController, UINavigationControllerDel
             }
         }
         
-        
+        goToSettings()
     }
     /*
     // MARK: - Navigation
@@ -129,7 +135,15 @@ class EditUserProfileViewController: UIViewController, UINavigationControllerDel
         label.alpha = 1
     }
     
+    func goToSettings() {
+        performSegue(withIdentifier: "toSettings", sender: self)
+    }
     func isTextFieldEmpty(_ textField: UITextField) -> Bool {
         return textField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+    }
+    
+    func isPasswordValid(_ password : String) -> Bool{
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z\\d]{8,}")
+        return passwordTest.evaluate(with: password)
     }
 }
