@@ -6,13 +6,40 @@
 //
 
 import UIKit
+import Firebase
 
-class MessageViewController: UIViewController {
+class MessageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    @IBOutlet var chatRoomsTableView: UITableView!
+    
+    let messageRoomNames:[String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        chatRoomsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        chatRoomsTableView.delegate = self
+        chatRoomsTableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // return messageRoomNames.count
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "Hello"
+        cell.accessoryType = .disclosureIndicator
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // show chat messages
+        
     }
     
 

@@ -54,6 +54,7 @@ class SettingViewController: UIViewController {
     func goToMain() {
         performSegue(withIdentifier: "toMain", sender: self)
     }
+    
     func loadUserImage() {
         let filePath = "\(Auth.auth().currentUser!.uid)/\("userPhoto")"
         self.storageRef?.child(filePath).getData(maxSize: 10*1024*1024, completion: { (data, error) in

@@ -1,18 +1,18 @@
 //
-//  TabBarController.swift
+//  ChatViewController.swift
 //  Fix
 //
-//  Created by Devin on 2023/11/25.
+//  Created by Devin on 2023/11/30.
 //
 
 import UIKit
 
-class UserEnvironmentTabBarController: UITabBarController {
+class ChatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        // navigationController?.navigationBar.isHidden = true
     }
     
 

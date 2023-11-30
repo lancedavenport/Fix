@@ -20,8 +20,6 @@ class LoginViewController: UIViewController {
 
     @IBOutlet var forgetPasswordButton: UIButton!
     
-    var uid: String? = nil
-    
     let toUserEnvironmentSegue = "toUserEnvironmentSegue"
     
     override func viewDidLoad() {
@@ -32,6 +30,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
+        //goToUserEnvironment()
         
         // validate fields
         if isTextFieldEmpty(emailTextField) || isTextFieldEmpty(passwordTextField) {
@@ -49,12 +48,11 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let error = error {
                 self.showError(self.errorLabel, error.localizedDescription)
-            } else if let user = result?.user {
+            } else {
                 self.errorLabel.alpha = 0
                 // hide navigation bar
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
                 // navigate to userEnvironment view and transfer user uid to userEnvironment
-                self.uid = user.uid
                 self.goToUserEnvironment()
             }
         }
@@ -64,15 +62,6 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: toUserEnvironmentSegue, sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == toUserEnvironmentSegue {
-            if let tabBarVC = segue.destination as? UserEnvironmentTabBarController {
-                tabBarVC.uid = uid
-            } else {
-                return
-            }
-        }
-    }
     
     @IBAction func forgetPasswordTapped(_ sender: Any) {
         let email = emailTextField.text ?? ""

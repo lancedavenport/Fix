@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FeedViewController: UIViewController {
     
@@ -14,9 +15,9 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        if let uid = getUid() {
-            label.text = uid
-        }
+
+        label.text = Auth.auth().currentUser?.uid ?? "Error"
+        
     }
 
     /*
@@ -28,17 +29,5 @@ class FeedViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    //Helper methods
-    
-    func getUid() -> String? {
-        if let tabBarController = tabBarController as? UserEnvironmentTabBarController {
-            if let uid = tabBarController.uid {
-                return uid
-            }
-            return nil
-        }
-        return nil
-    }
     
 }
