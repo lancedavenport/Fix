@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0335EE372B193B5C00F54A87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335EE362B193B5C00F54A87 /* ChatViewController.swift */; };
 		0362F2312B0F53D3000B7A1C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362F2302B0F53D3000B7A1C /* SignUpViewController.swift */; };
 		0362F2332B0F6250000B7A1C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362F2322B0F6250000B7A1C /* LoginViewController.swift */; };
 		0362F2352B101D7F000B7A1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0362F2342B101D7F000B7A1C /* GoogleService-Info.plist */; };
@@ -76,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0335EE362B193B5C00F54A87 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0362F2302B0F53D3000B7A1C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0362F2322B0F6250000B7A1C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0362F2342B101D7F000B7A1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -184,6 +186,7 @@
 				03B4D4FA2B130C49009ADE1A /* FriendsViewController.swift */,
 				03B4D4FC2B130C5D009ADE1A /* MessageViewController.swift */,
 				790786942B17AE51008AE882 /* EditUserProfileViewController.swift */,
+				0335EE362B193B5C00F54A87 /* ChatViewController.swift */,
 			);
 			path = "UserEnvironment ViewControllers";
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			files = (
 				799256ED2B06B55500AD0A69 /* save_load_json.swift in Sources */,
 				03B4D4FF2B131549009ADE1A /* UserEnvironmentTabBarController.swift in Sources */,
+				0335EE372B193B5C00F54A87 /* ChatViewController.swift in Sources */,
 				03B4D4B52B12F328009ADE1A /* FeedViewController.swift in Sources */,
 				03BBDC482B1561DE00597FBE /* SignUpBioViewController.swift in Sources */,
 				79A8C4412AF974430072F483 /* ViewController.swift in Sources */,

@@ -79,7 +79,6 @@ class EditUserProfileViewController: UIViewController, UINavigationControllerDel
         }
     
         if !isTextFieldEmpty(editPassword) && !isTextFieldEmpty(confirmPassword){
-
             if let pw = editPassword.text, let cpw = confirmPassword.text, pw != cpw {
                 showError(errorText, "Your password comfirmation does not match your password")
                 return

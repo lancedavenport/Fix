@@ -103,16 +103,5 @@ class SignUpBioViewController: UIViewController, UINavigationControllerDelegate,
     func goToUserEnvironment() {
         performSegue(withIdentifier: toUserEnvironmentSegue, sender: self)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == toUserEnvironmentSegue {
-            if let tabBarVC = segue.destination as? UserEnvironmentTabBarController {
-                tabBarVC.uid = uid
-            } else {
-                return
-            }
-        }
-    }
-
 
 }

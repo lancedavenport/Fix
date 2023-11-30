@@ -25,8 +25,6 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
-    var uid: String? = nil
-    
     let toSignUpBioSegue = "toSignUpBioSegue"
     
     override func viewDidLoad() {
@@ -107,7 +105,6 @@ class SignUpViewController: UIViewController {
                 //hide navigation bar
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
                 // navigate to userEnvironment view and transfer user uid to userEnvironment
-                self.uid = uid
                 self.goToSignUpBio()
             }
         }
@@ -116,17 +113,6 @@ class SignUpViewController: UIViewController {
     func goToSignUpBio() {
         performSegue(withIdentifier: toSignUpBioSegue, sender: self)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == toSignUpBioSegue {
-            if let signUpBioVC = segue.destination as? SignUpBioViewController {
-                signUpBioVC.uid = uid
-            } else {
-                return
-            }
-        }
-    }
-    
     
     // Helper methods
     func showError(_ label: UILabel, _ errorMessage: String) {
