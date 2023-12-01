@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0335EE372B193B5C00F54A87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335EE362B193B5C00F54A87 /* ChatViewController.swift */; };
+		0335EE392B196D0100F54A87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335EE382B196D0100F54A87 /* Extensions.swift */; };
 		0362F2312B0F53D3000B7A1C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362F2302B0F53D3000B7A1C /* SignUpViewController.swift */; };
 		0362F2332B0F6250000B7A1C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362F2322B0F6250000B7A1C /* LoginViewController.swift */; };
 		0362F2352B101D7F000B7A1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0362F2342B101D7F000B7A1C /* GoogleService-Info.plist */; };
@@ -51,7 +52,6 @@
 		799256ED2B06B55500AD0A69 /* save_load_json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256EC2B06B55500AD0A69 /* save_load_json.swift */; };
 		79A8C43D2AF974430072F483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C43C2AF974430072F483 /* AppDelegate.swift */; };
 		79A8C43F2AF974430072F483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C43E2AF974430072F483 /* SceneDelegate.swift */; };
-		79A8C4412AF974430072F483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C4402AF974430072F483 /* ViewController.swift */; };
 		79A8C4442AF974430072F483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A8C4422AF974430072F483 /* Main.storyboard */; };
 		79A8C4462AF974460072F483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A8C4452AF974460072F483 /* Assets.xcassets */; };
 		79A8C4542AF974460072F483 /* FixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C4532AF974460072F483 /* FixTests.swift */; };
@@ -78,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		0335EE362B193B5C00F54A87 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0335EE382B196D0100F54A87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0362F2302B0F53D3000B7A1C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0362F2322B0F6250000B7A1C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0362F2342B101D7F000B7A1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -95,7 +96,6 @@
 		79A8C4392AF974430072F483 /* Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A8C43C2AF974430072F483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79A8C43E2AF974430072F483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79A8C4402AF974430072F483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79A8C4432AF974430072F483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79A8C4452AF974460072F483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79A8C44A2AF974460072F483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -215,15 +215,15 @@
 			isa = PBXGroup;
 			children = (
 				79A8C43C2AF974430072F483 /* AppDelegate.swift */,
+				79A8C43E2AF974430072F483 /* SceneDelegate.swift */,
+				0335EE382B196D0100F54A87 /* Extensions.swift */,
 				03A907242B0F311500F58DBA /* StoryBoards */,
 				03A907252B0F314900F58DBA /* Main ViewControllers */,
 				03B4D4AF2B12F19F009ADE1A /* UserEnvironment ViewControllers */,
-				79A8C4402AF974430072F483 /* ViewController.swift */,
-				79A8C43E2AF974430072F483 /* SceneDelegate.swift */,
-				799256EA2B06B01500AD0A69 /* individual.swift */,
 				79A8C4452AF974460072F483 /* Assets.xcassets */,
 				0362F2342B101D7F000B7A1C /* GoogleService-Info.plist */,
 				79A8C44A2AF974460072F483 /* Info.plist */,
+				799256EA2B06B01500AD0A69 /* individual.swift */,
 				799256E42B03CC8F00AD0A69 /* login.swift */,
 				799256EC2B06B55500AD0A69 /* save_load_json.swift */,
 			);
@@ -416,13 +416,13 @@
 				0335EE372B193B5C00F54A87 /* ChatViewController.swift in Sources */,
 				03B4D4B52B12F328009ADE1A /* FeedViewController.swift in Sources */,
 				03BBDC482B1561DE00597FBE /* SignUpBioViewController.swift in Sources */,
-				79A8C4412AF974430072F483 /* ViewController.swift in Sources */,
 				790786952B17AE51008AE882 /* EditUserProfileViewController.swift in Sources */,
 				0362F2312B0F53D3000B7A1C /* SignUpViewController.swift in Sources */,
 				79A8C43D2AF974430072F483 /* AppDelegate.swift in Sources */,
 				03B4D4F92B130C38009ADE1A /* SettingViewController.swift in Sources */,
 				03B4D4FB2B130C49009ADE1A /* FriendsViewController.swift in Sources */,
 				0362F2332B0F6250000B7A1C /* LoginViewController.swift in Sources */,
+				0335EE392B196D0100F54A87 /* Extensions.swift in Sources */,
 				79A8C43F2AF974430072F483 /* SceneDelegate.swift in Sources */,
 				799256E52B03CC8F00AD0A69 /* login.swift in Sources */,
 				03B4D4FD2B130C5D009ADE1A /* MessageViewController.swift in Sources */,

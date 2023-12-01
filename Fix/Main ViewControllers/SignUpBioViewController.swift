@@ -33,6 +33,17 @@ class SignUpBioViewController: UIViewController, UINavigationControllerDelegate,
         self.storageRef = storage.reference()
         self.uid = Auth.auth().currentUser!.uid
         errorText.alpha = 0
+        
+        imageView.setCircular()
+        
+        let filePath = "default/picture.jpg"
+        Storage.storage().reference().child(filePath).getData(maxSize: 10*1024*1024) { data, error in
+            if let error = error {
+                self.showError(self.errorText, "error loading default image from firbase storage: \(error.localizedDescription)")
+            } else {
+                self.imageView.image = UIImage(data: data!)
+            }
+        }
     }
     
     @IBAction func saveImage(_ sender: UIButton) {
@@ -49,8 +60,22 @@ class SignUpBioViewController: UIViewController, UINavigationControllerDelegate,
         }
     }
     
-    @IBAction func saveData(_ sender: Any) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.image = image
+        }
         
+        self.dismiss(animated: true, completion: nil)
+    }
+        
+    func showError(_ label: UILabel, _ errorMessage: String) {
+            label.textColor = .systemRed
+            label.text = errorMessage
+            label.alpha = 1
+    }
+    // store user entered bio, etc, then navigate to userEnvironment TabController
+    @IBAction func nextTapped(_ sender: Any) {
+        // store user Bio info and image to database
         let db = Firestore.firestore()
         let uid = Auth.auth().currentUser!.uid
         let dbCollection = db.collection("users")
@@ -64,39 +89,22 @@ class SignUpBioViewController: UIViewController, UINavigationControllerDelegate,
                 self.errorText.alpha = 1
             }
         }
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            imageView.image = image
+        
+        var data = Data()
+        data = imageView.image!.jpegData(compressionQuality: 0.8)!
+        let filePath = "\(Auth.auth().currentUser!.uid)/\("userPhoto")"
+        let metaData = StorageMetadata()
 
-            var data = Data()
-            data = imageView.image!.jpegData(compressionQuality: 0.8)!
-            let filePath = "\(Auth.auth().currentUser!.uid)/\("userPhoto")"
-            let metaData = StorageMetadata()
-
-            metaData.contentType = "image/jpg"
-            self.storageRef?.child(filePath).putData(data, metadata: metaData){(metaData,error) in
-                if let error = error {
-                    print(error.localizedDescription)
-                    return
-                } else {
-                    
-                }
+        metaData.contentType = "image/jpg"
+        self.storageRef?.child(filePath).putData(data, metadata: metaData){(metaData,error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            } else {
+                
             }
         }
         
-        self.dismiss(animated: true, completion: nil)
-    }
-        
-    func showError(_ label: UILabel, _ errorMessage: String) {
-            label.textColor = .systemRed
-            label.text = errorMessage
-            label.alpha = 1
-    }
-    // store user entered bio, etc, then navigate to userEnvironment TabController
-    @IBAction func nextTapped(_ sender: Any) {
-        // store user Bio info to database
         goToUserEnvironment()
     }
     
