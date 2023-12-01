@@ -38,6 +38,8 @@ class SignUpViewController: UIViewController {
     // Check fields before navigating to more info screen. Show error message if needed.
     @IBAction func signUpTapped(_ sender: Any) {
         
+        // goToSignUpBio()
+        
         // validate SignUp screen's information fields, print error if needed
         if isTextFieldEmpty(firstNameTextField) || isTextFieldEmpty(lastNameTextField){
             showError(errorLabel, "Enter your first and last name")

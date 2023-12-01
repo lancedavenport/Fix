@@ -17,6 +17,8 @@ class SettingViewController: UIViewController {
 
     @IBOutlet weak var profilePicture: UIImageView!
     
+    let toEditUserProfileSegue = "toEdituserProfileSegue"
+    let toMainSegue = "toMainSegue"
     let storage = Storage.storage()
     var storageRef: StorageReference? = nil
     var uid: String? = nil
@@ -27,39 +29,35 @@ class SettingViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.storageRef = storage.reference()
         self.uid = Auth.auth().currentUser!.uid
-        
-        loadUserImage()
+        profilePicture.setCircular()
+        loadSavedUserImageTo(imageView: profilePicture)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        loadSavedUserImageTo(imageView: profilePicture)
     }
-    */
 
-    @IBAction func logout(_ sender: Any) {
+    @IBAction func logoutTapped(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do {
           try firebaseAuth.signOut()
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
         }
+        performSegue(withIdentifier: toMainSegue, sender: self)
     }
     
-    func goToMain() {
-        performSegue(withIdentifier: "toMain", sender: self)
+    @IBAction func editProfileTapped(_ sender: Any) {
+        performSegue(withIdentifier: toEditUserProfileSegue, sender: self)
     }
     
-    func loadUserImage() {
+    
+    // helper methods
+    func loadSavedUserImageTo(imageView: UIImageView) {
         let filePath = "\(Auth.auth().currentUser!.uid)/\("userPhoto")"
         self.storageRef?.child(filePath).getData(maxSize: 10*1024*1024, completion: { (data, error) in
             let userPhoto = UIImage(data: data!)
-            self.profilePicture.image = userPhoto
+            imageView.image = userPhoto
         } )
     }
 }
