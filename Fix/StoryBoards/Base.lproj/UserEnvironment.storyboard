@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -271,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="1633.8461538461538" y="1114.6919431279621"/>
         </scene>
-        <!--Message View Controller-->
+        <!--Conversations View Controller-->
         <scene sceneID="tsU-Q7-eYP">
             <objects>
-                <viewController id="xah-z0-fec" customClass="MessageViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xah-z0-fec" customClass="ConversationsViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="erT-7h-qZy">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
