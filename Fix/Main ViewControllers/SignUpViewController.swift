@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -91,6 +92,7 @@ class SignUpViewController: UIViewController {
                     "first_name": firstName,
                     "last_name": lastName,
                     "uid": uid,
+                    "email": email,
                     "bio": ""
                 ]
                 
@@ -104,6 +106,17 @@ class SignUpViewController: UIViewController {
                     }
                 }
                 
+                let realTimeDB = Database.database().reference()
+                realTimeDB.child("users").child(uid).setValue(true) { (error, ref) in
+                    if let error = error {
+                        self.showError(self.errorLabel, "User created but failed to save data to real-time db: \(error.localizedDescription)")
+                    } else {
+                        self.errorLabel.text = "Successfully created and added new user data to db and real-time db."
+                        self.errorLabel.textColor = UIColor.black
+                        self.errorLabel.alpha = 1
+                    }
+                }
+                                                        
                 //hide navigation bar
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
                 // navigate to userEnvironment view and transfer user uid to userEnvironment

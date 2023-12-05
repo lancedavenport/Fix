@@ -30,6 +30,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
+        //Auth.auth().signIn(withEmail: "1@t.com", password: "123456Aa")
+        //navigationController?.navigationBar.isHidden = true
         //goToUserEnvironment()
         
         // validate fields
