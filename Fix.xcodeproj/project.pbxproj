@@ -42,9 +42,11 @@
 		03B4D4B52B12F328009ADE1A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4B42B12F328009ADE1A /* FeedViewController.swift */; };
 		03B4D4F92B130C38009ADE1A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4F82B130C38009ADE1A /* SettingViewController.swift */; };
 		03B4D4FB2B130C49009ADE1A /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4FA2B130C49009ADE1A /* FriendsViewController.swift */; };
-		03B4D4FD2B130C5D009ADE1A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4FC2B130C5D009ADE1A /* MessageViewController.swift */; };
+		03B4D4FD2B130C5D009ADE1A /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4FC2B130C5D009ADE1A /* ConversationsViewController.swift */; };
 		03B4D4FF2B131549009ADE1A /* UserEnvironmentTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B4D4FE2B131549009ADE1A /* UserEnvironmentTabBarController.swift */; };
 		03BBDC482B1561DE00597FBE /* SignUpBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBDC472B1561DE00597FBE /* SignUpBioViewController.swift */; };
+		03EC1A042B199E36008ED680 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03EC1A032B199E36008ED680 /* MessageKit */; };
+		03EC1A082B1A98A6008ED680 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC1A072B1A98A6008ED680 /* NewConversationViewController.swift */; };
 		03FDAB2E2B0808A3004BF95E /* UserEnvironment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FDAB2C2B0808A3004BF95E /* UserEnvironment.storyboard */; };
 		790786952B17AE51008AE882 /* EditUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790786942B17AE51008AE882 /* EditUserProfileViewController.swift */; };
 		799256E52B03CC8F00AD0A69 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256E42B03CC8F00AD0A69 /* login.swift */; };
@@ -85,9 +87,10 @@
 		03B4D4B42B12F328009ADE1A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		03B4D4F82B130C38009ADE1A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		03B4D4FA2B130C49009ADE1A /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
-		03B4D4FC2B130C5D009ADE1A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		03B4D4FC2B130C5D009ADE1A /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		03B4D4FE2B131549009ADE1A /* UserEnvironmentTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEnvironmentTabBarController.swift; sourceTree = "<group>"; };
 		03BBDC472B1561DE00597FBE /* SignUpBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBioViewController.swift; sourceTree = "<group>"; };
+		03EC1A072B1A98A6008ED680 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		03FDAB2D2B0808A3004BF95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserEnvironment.storyboard; sourceTree = "<group>"; };
 		790786942B17AE51008AE882 /* EditUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileViewController.swift; sourceTree = "<group>"; };
 		799256E42B03CC8F00AD0A69 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 				0362F24A2B1021BE000B7A1C /* FirebaseDatabase in Frameworks */,
 				0362F2582B1021BE000B7A1C /* FirebaseFunctionsCombine-Community in Frameworks */,
 				0362F2502B1021BE000B7A1C /* FirebaseFirestore in Frameworks */,
+				03EC1A042B199E36008ED680 /* MessageKit in Frameworks */,
 				0362F23C2B1021BE000B7A1C /* FirebaseAnalyticsSwift in Frameworks */,
 				0362F2382B1021BE000B7A1C /* FirebaseAnalytics in Frameworks */,
 				0362F23A2B1021BE000B7A1C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
@@ -182,13 +186,30 @@
 			children = (
 				03B4D4FE2B131549009ADE1A /* UserEnvironmentTabBarController.swift */,
 				03B4D4B42B12F328009ADE1A /* FeedViewController.swift */,
-				03B4D4F82B130C38009ADE1A /* SettingViewController.swift */,
 				03B4D4FA2B130C49009ADE1A /* FriendsViewController.swift */,
-				03B4D4FC2B130C5D009ADE1A /* MessageViewController.swift */,
-				790786942B17AE51008AE882 /* EditUserProfileViewController.swift */,
-				0335EE362B193B5C00F54A87 /* ChatViewController.swift */,
+				03EC1A062B199E7D008ED680 /* Setting */,
+				03EC1A052B199E6F008ED680 /* Message */,
 			);
 			path = "UserEnvironment ViewControllers";
+			sourceTree = "<group>";
+		};
+		03EC1A052B199E6F008ED680 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				03B4D4FC2B130C5D009ADE1A /* ConversationsViewController.swift */,
+				0335EE362B193B5C00F54A87 /* ChatViewController.swift */,
+				03EC1A072B1A98A6008ED680 /* NewConversationViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		03EC1A062B199E7D008ED680 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				03B4D4F82B130C38009ADE1A /* SettingViewController.swift */,
+				790786942B17AE51008AE882 /* EditUserProfileViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		79A8C4302AF974430072F483 = {
@@ -291,6 +312,7 @@
 				0362F2672B1021BE000B7A1C /* FirebaseRemoteConfigSwift */,
 				0362F2692B1021BE000B7A1C /* FirebaseStorage */,
 				0362F26B2B1021BE000B7A1C /* FirebaseStorageCombine-Community */,
+				03EC1A032B199E36008ED680 /* MessageKit */,
 			);
 			productName = Fix;
 			productReference = 79A8C4392AF974430072F483 /* Fix.app */;
@@ -366,6 +388,7 @@
 			mainGroup = 79A8C4302AF974430072F483;
 			packageReferences = (
 				0362F2362B1021BE000B7A1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				03EC1A022B199E36008ED680 /* XCRemoteSwiftPackageReference "MessageKit" */,
 			);
 			productRefGroup = 79A8C43A2AF974430072F483 /* Products */;
 			projectDirPath = "";
@@ -424,8 +447,9 @@
 				0362F2332B0F6250000B7A1C /* LoginViewController.swift in Sources */,
 				0335EE392B196D0100F54A87 /* Extensions.swift in Sources */,
 				79A8C43F2AF974430072F483 /* SceneDelegate.swift in Sources */,
+				03EC1A082B1A98A6008ED680 /* NewConversationViewController.swift in Sources */,
 				799256E52B03CC8F00AD0A69 /* login.swift in Sources */,
-				03B4D4FD2B130C5D009ADE1A /* MessageViewController.swift in Sources */,
+				03B4D4FD2B130C5D009ADE1A /* ConversationsViewController.swift in Sources */,
 				799256EB2B06B01500AD0A69 /* individual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -782,6 +806,14 @@
 				minimumVersion = 10.18.0;
 			};
 		};
+		03EC1A022B199E36008ED680 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -919,6 +951,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0362F2362B1021BE000B7A1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		03EC1A032B199E36008ED680 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03EC1A022B199E36008ED680 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
