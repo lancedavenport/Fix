@@ -17,7 +17,6 @@ class SettingViewController: UIViewController {
 
     @IBOutlet weak var profilePicture: UIImageView!
     
-    
     let toEditUserProfileSegue = "toEdituserProfileSegue"
     let toMainSegue = "toMainSegue"
     let storage = Storage.storage()
@@ -54,7 +53,21 @@ class SettingViewController: UIViewController {
     
     @IBAction func deleteAccount(_ sender: UIButton) {
         let user = Auth.auth().currentUser!
+        let filePath = "\(Auth.auth().currentUser!.uid)/\("userPhoto")"
+        let ref = self.storageRef?.child(filePath)
         
+        ref!.delete { error in
+            if let error = error {
+                print("Error delete user profile picture")
+            } else {
+                print("Success")
+            }}
+        let db = Firestore.firestore()
+        let uid = user.uid
+        let dbCollection = db.collection("users")
+
+        dbCollection.document(uid).delete()
+       
         user.delete { [self] error in
             if let error = error {
                 print("Error deleting user: %@", user.uid)
