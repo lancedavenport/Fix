@@ -17,6 +17,7 @@ class SettingViewController: UIViewController {
 
     @IBOutlet weak var profilePicture: UIImageView!
     
+    
     let toEditUserProfileSegue = "toEdituserProfileSegue"
     let toMainSegue = "toMainSegue"
     let storage = Storage.storage()
@@ -51,6 +52,17 @@ class SettingViewController: UIViewController {
         performSegue(withIdentifier: toEditUserProfileSegue, sender: self)
     }
     
+    @IBAction func deleteAccount(_ sender: UIButton) {
+        let user = Auth.auth().currentUser!
+        
+        user.delete { [self] error in
+            if let error = error {
+                print("Error deleting user: %@", user.uid)
+            } else {
+                print("User successfully deleted")
+                performSegue(withIdentifier: toMainSegue, sender: self)
+            }}
+    }
     
     // helper methods
     func loadSavedUserImageTo(imageView: UIImageView) {

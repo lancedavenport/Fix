@@ -49,9 +49,6 @@
 		03EC1A082B1A98A6008ED680 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC1A072B1A98A6008ED680 /* NewConversationViewController.swift */; };
 		03FDAB2E2B0808A3004BF95E /* UserEnvironment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FDAB2C2B0808A3004BF95E /* UserEnvironment.storyboard */; };
 		790786952B17AE51008AE882 /* EditUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790786942B17AE51008AE882 /* EditUserProfileViewController.swift */; };
-		799256E52B03CC8F00AD0A69 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256E42B03CC8F00AD0A69 /* login.swift */; };
-		799256EB2B06B01500AD0A69 /* individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256EA2B06B01500AD0A69 /* individual.swift */; };
-		799256ED2B06B55500AD0A69 /* save_load_json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799256EC2B06B55500AD0A69 /* save_load_json.swift */; };
 		79A8C43D2AF974430072F483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C43C2AF974430072F483 /* AppDelegate.swift */; };
 		79A8C43F2AF974430072F483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C43E2AF974430072F483 /* SceneDelegate.swift */; };
 		79A8C4442AF974430072F483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A8C4422AF974430072F483 /* Main.storyboard */; };
@@ -93,9 +90,6 @@
 		03EC1A072B1A98A6008ED680 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		03FDAB2D2B0808A3004BF95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserEnvironment.storyboard; sourceTree = "<group>"; };
 		790786942B17AE51008AE882 /* EditUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileViewController.swift; sourceTree = "<group>"; };
-		799256E42B03CC8F00AD0A69 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
-		799256EA2B06B01500AD0A69 /* individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = individual.swift; sourceTree = "<group>"; };
-		799256EC2B06B55500AD0A69 /* save_load_json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = save_load_json.swift; sourceTree = "<group>"; };
 		79A8C4392AF974430072F483 /* Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A8C43C2AF974430072F483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79A8C43E2AF974430072F483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,9 +238,6 @@
 				79A8C4452AF974460072F483 /* Assets.xcassets */,
 				0362F2342B101D7F000B7A1C /* GoogleService-Info.plist */,
 				79A8C44A2AF974460072F483 /* Info.plist */,
-				799256EA2B06B01500AD0A69 /* individual.swift */,
-				799256E42B03CC8F00AD0A69 /* login.swift */,
-				799256EC2B06B55500AD0A69 /* save_load_json.swift */,
 			);
 			path = Fix;
 			sourceTree = "<group>";
@@ -434,7 +425,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799256ED2B06B55500AD0A69 /* save_load_json.swift in Sources */,
 				03B4D4FF2B131549009ADE1A /* UserEnvironmentTabBarController.swift in Sources */,
 				0335EE372B193B5C00F54A87 /* ChatViewController.swift in Sources */,
 				03B4D4B52B12F328009ADE1A /* FeedViewController.swift in Sources */,
@@ -448,9 +438,7 @@
 				0335EE392B196D0100F54A87 /* Extensions.swift in Sources */,
 				79A8C43F2AF974430072F483 /* SceneDelegate.swift in Sources */,
 				03EC1A082B1A98A6008ED680 /* NewConversationViewController.swift in Sources */,
-				799256E52B03CC8F00AD0A69 /* login.swift in Sources */,
 				03B4D4FD2B130C5D009ADE1A /* ConversationsViewController.swift in Sources */,
-				799256EB2B06B01500AD0A69 /* individual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -67,6 +68,18 @@
                                     <action selector="editProfileTapped:" destination="01J-lp-oVM" eventType="touchUpInside" id="a1c-nx-0mx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aZv-cF-HlG">
+                                <rect key="frame" x="128" y="597" width="141" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Delete Account" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteAccount:" destination="01J-lp-oVM" eventType="touchUpInside" id="COF-SF-uGM"/>
+                                    <action selector="editProfileTapped:" destination="01J-lp-oVM" eventType="touchUpInside" id="vqx-9O-BLA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -80,6 +93,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5Ug-5h-Lyz"/>
                     <connections>
+                        <outlet property="deleteButtonOutlet" destination="aZv-cF-HlG" id="R9s-TA-ZNh"/>
                         <outlet property="profilePicture" destination="Tbh-WX-V6t" id="4nq-6g-CCj"/>
                         <segue destination="pAj-lY-VDl" kind="show" identifier="toEdituserProfileSegue" id="HA0-9P-RXV"/>
                     </connections>
