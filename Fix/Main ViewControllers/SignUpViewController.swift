@@ -93,7 +93,10 @@ class SignUpViewController: UIViewController {
                     "last_name": lastName,
                     "uid": uid,
                     "email": email,
-                    "bio": ""
+                    "bio": "",
+                    "seen": [],
+                    "matches": [],
+                    "friends": []
                 ]
                 
                 dbCollection.document(uid).setData(userData) { error in
