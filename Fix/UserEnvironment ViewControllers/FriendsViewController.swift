@@ -1,6 +1,49 @@
 import UIKit
 import Firebase
 
+
+// Define your custom PossibleFriendView
+class PossibleFriendView: UIView {
+    // Add your UI elements here (e.g., labels, buttons)
+    var nameLabel: UILabel = UILabel()
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        // Setup nameLabel and other UI elements
+        addSubview(nameLabel)
+        // Layout your nameLabel and other elements
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // Method to configure view with user data
+    func configure(with user: User) {
+        nameLabel.text = "\(user.firstName) \(user.lastName)"
+        // Configure other elements if needed
+    }
+}
+
+// Define your custom UITableViewCell
+class FriendTableViewCell: UITableViewCell {
+    var possibleFriendView = PossibleFriendView()
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        contentView.addSubview(possibleFriendView)
+        // Layout your possibleFriendView within the cell
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // Configure the cell with a User object
+    func configureWithUser(_ user: User) {
+        possibleFriendView.configure(with: user)
+    }
+}
 class FriendsViewController: UIViewController {
     
     // MARK: - Properties
@@ -12,6 +55,7 @@ class FriendsViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUpSearchController()
         setUpTableView()
         fetchAllUsers()
@@ -28,10 +72,10 @@ class FriendsViewController: UIViewController {
     }
     
     private func setUpTableView() {
-        usersTableView.register(UITableViewCell.self, forCellReuseIdentifier: "userCell")
-        usersTableView.delegate = self
-        usersTableView.dataSource = self
-    }
+            usersTableView.register(FriendTableViewCell.self, forCellReuseIdentifier: "FriendCell")
+            usersTableView.delegate = self
+            usersTableView.dataSource = self
+        }
     
     // MARK: - Data Handling
     private func fetchAllUsers() {
@@ -66,7 +110,7 @@ class FriendsViewController: UIViewController {
 }
 
 // MARK: - TableView Delegate and DataSource
-extension SearchFriendsViewController: UITableViewDelegate, UITableViewDataSource {
+extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredUsers.count
     }
