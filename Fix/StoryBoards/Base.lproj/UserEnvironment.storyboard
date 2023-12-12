@@ -101,6 +101,40 @@
             </objects>
             <point key="canvasLocation" x="770.76923076923072" y="1114.6919431279621"/>
         </scene>
+        <!--Users Match View Controller-->
+        <scene sceneID="Dj6-6M-uOf">
+            <objects>
+                <viewController storyboardIdentifier="onMatchID" id="VeL-PZ-LxD" customClass="UsersMatchViewController" customModule="Fix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q2N-x4-tAE">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-7m-Uvt">
+                                <rect key="frame" x="158" y="751" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="segueBack:" destination="VeL-PZ-LxD" eventType="touchUpInside" id="oKJ-5m-aWY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="61" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shR-ZH-fE0">
+                                <rect key="frame" x="30" y="47" width="331" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PEh-zg-cUv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxg-Ts-L0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979" y="1790"/>
+        </scene>
         <!--Edit Profile-->
         <scene sceneID="hJe-Hk-QXP">
             <objects>
@@ -242,7 +276,7 @@
                                         <rect key="frame" x="48" y="0.0" width="333" height="1336"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <mutableString key="text">Account Deletion Disclaimer
+                                        <string key="text">Account Deletion Disclaimer
 
 Effective Date: 12/12/2023
 
@@ -266,7 +300,7 @@ Modification of Terms: The Company reserves the right to modify or update the te
 
 By proceeding with the account deletion process, you confirm that you have read, understood, and agreed to the terms and conditions outlined in this Disclaimer. If you do not agree with any part of this Disclaimer, please do not initiate the account deletion process.
 
-For any questions or concerns regarding account deletion, please contact our customer support team.</mutableString>
+For any questions or concerns regarding account deletion, please contact our customer support team.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -304,28 +338,65 @@ For any questions or concerns regarding account deletion, please contact our cus
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKQ-vi-0gI">
-                                <rect key="frame" x="174" y="411.66666666666669" width="42" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxs-56-0p4">
+                                <rect key="frame" x="30" y="142" width="331" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="61" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E4-cF-qCc">
+                                <rect key="frame" x="30" y="558" width="331" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKI-9F-jQ9">
+                                <rect key="frame" x="30" y="691" width="68" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="X"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="swipeNo:" destination="qbP-IU-cbM" eventType="touchUpInside" id="d06-HB-cKY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrA-KW-ovr">
+                                <rect key="frame" x="293" y="690" width="68" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="checkmark" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="swipeYes:" destination="qbP-IU-cbM" eventType="touchUpInside" id="ERa-IR-reG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7t0-Vs-Dac"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="qKQ-vi-0gI" firstAttribute="centerX" secondItem="0PU-Xz-1gQ" secondAttribute="centerX" id="qFD-40-l0E"/>
-                            <constraint firstItem="qKQ-vi-0gI" firstAttribute="centerY" secondItem="0PU-Xz-1gQ" secondAttribute="centerY" id="rn0-ZZ-0xI"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="circle.hexagonpath" catalog="system" id="YEl-Wc-C4s"/>
                     <connections>
-                        <outlet property="label" destination="qKQ-vi-0gI" id="4cL-rX-ZoJ"/>
+                        <outlet property="swipeNoOutlet" destination="CKI-9F-jQ9" id="IFe-gT-6bY"/>
+                        <outlet property="swipeYesOutlet" destination="SrA-KW-ovr" id="PUU-zq-0hL"/>
+                        <outlet property="userBio" destination="4E4-cF-qCc" id="n1E-fY-3fo"/>
+                        <outlet property="userImage" destination="hxs-56-0p4" id="CIf-bl-ude"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae7-VY-oGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-988" y="1116"/>
+            <point key="canvasLocation" x="-989.23076923076917" y="1115.4028436018957"/>
         </scene>
         <!--Friends-->
         <scene sceneID="aNf-Hx-9dH">
@@ -430,6 +501,7 @@ For any questions or concerns regarding account deletion, please contact our cus
     </scenes>
     <resources>
         <image name="bubble.right.circle" catalog="system" width="128" height="123"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="circle.hexagonpath" catalog="system" width="128" height="115"/>
         <image name="gearshape.circle" catalog="system" width="128" height="123"/>
         <image name="person.2.crop.square.stack" catalog="system" width="105" height="128"/>
@@ -439,8 +511,17 @@ For any questions or concerns regarding account deletion, please contact our cus
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
