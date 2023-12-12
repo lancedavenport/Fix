@@ -128,7 +128,8 @@ class SignUpViewController: UIViewController {
                     "bio": "",
                     "seen": [],
                     "matches": [],
-                    "friends": []
+                    "friends": [],
+                    "liked": []
                 ]
                 
                 dbCollection.document(uid).setData(userData) { error in

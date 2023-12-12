@@ -9,6 +9,8 @@ import UIKit
 
 class UsersMatchViewController: UIViewController {
 
+    @IBOutlet weak var userImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +18,8 @@ class UsersMatchViewController: UIViewController {
     }
     
 
+    @IBAction func segueBack(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
