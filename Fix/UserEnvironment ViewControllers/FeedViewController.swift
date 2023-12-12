@@ -7,19 +7,55 @@
 
 import UIKit
 import Firebase
+import FirebaseStorage
 
 class FeedViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
+    let storage = Storage.storage()
+    var storageRef: StorageReference? = nil
+    var uid: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        label.text = Auth.auth().currentUser?.uid ?? "Error"
+        getUser { (seenArray, error) in
+            if let error = error {
+                print(error)
+            } else if let seenArray = seenArray {
+                self.label.text = seenArray[0]
+            }
+            
+        }
+        self.storageRef = storage.reference()
+        self.uid = Auth.auth().currentUser!.uid
         
     }
 
+    
+    func getUser(completion: @escaping ([String]?, Error?) -> Void) {
+        let db = Firestore.firestore()
+        let uid = Auth.auth().currentUser!.uid
+        let dbCollection = db.collection("users")
+        
+        dbCollection.document(uid).getDocument { (document, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+
+            if let document = document, document.exists {
+                let data = document.data()
+                let seenArray = data?["seen"] as? [String] ?? []
+                print(seenArray)
+                completion(seenArray, nil)
+            } else {
+                print("document does not exist")
+                completion(nil, nil)
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

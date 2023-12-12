@@ -39,17 +39,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABd-17-k5P">
-                                <rect key="frame" x="282" y="111" width="78" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Logout" cornerStyle="capsule">
-                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="logoutTapped:" destination="01J-lp-oVM" eventType="touchUpInside" id="szm-9F-9Wv"/>
-                                    <segue destination="jdG-u8-DqY" kind="show" identifier="toMainSegue" id="3Gx-FL-OA1"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tbh-WX-V6t">
                                 <rect key="frame" x="95" y="196" width="200" height="200"/>
                                 <constraints>
@@ -66,6 +55,29 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="editProfileTapped:" destination="01J-lp-oVM" eventType="touchUpInside" id="a1c-nx-0mx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aZv-cF-HlG">
+                                <rect key="frame" x="125" y="622" width="141" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Delete Account" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteAccount:" destination="01J-lp-oVM" eventType="touchUpInside" id="COF-SF-uGM"/>
+                                    <action selector="editProfileTapped:" destination="01J-lp-oVM" eventType="touchUpInside" id="vqx-9O-BLA"/>
+                                    <segue destination="pHW-b7-6ph" kind="show" identifier="toDeleteAccountSegue" id="y0m-Dh-Epv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABd-17-k5P">
+                                <rect key="frame" x="281" y="110" width="78" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutTapped:" destination="01J-lp-oVM" eventType="touchUpInside" id="szm-9F-9Wv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -212,17 +224,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4R5-N0-OLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="811" y="1885"/>
+            <point key="canvasLocation" x="398" y="1885"/>
         </scene>
-        <!--Main-->
-        <scene sceneID="VBS-ai-hT5">
+        <!--Delete Account-->
+        <scene sceneID="WAd-mw-XBW">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="jdG-u8-DqY" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="1Bi-0y-6jX"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c8L-DN-308" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="pHW-b7-6ph" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yGG-hp-zGh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-fk-SJR">
+                                <rect key="frame" x="16" y="114" width="358" height="577"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3UL-8P-4J2">
+                                        <rect key="frame" x="48" y="0.0" width="333" height="1336"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <mutableString key="text">Account Deletion Disclaimer
+
+Effective Date: 12/12/2023
+
+This Account Deletion Disclaimer ("Disclaimer") is provided by Fix App ("Company," "we," "us," or "our") to outline the terms and conditions associated with the deletion of a user account on our platform or website. By requesting the deletion of your account, you acknowledge and agree to the following:
+
+Account Deletion Process: To delete your account, you must follow the established account deletion process provided on our platform or website. This process may require you to provide specific information or complete certain actions, such as confirming your identity.
+
+Permanent Deletion: When you request the deletion of your account, you understand and accept that your account and associated data will be permanently removed from our system. This includes all personal information, content, and any other data associated with your account.
+
+Irreversible Action: Account deletion is an irreversible action. Once your account is deleted, we cannot recover any of your data or restore your account in any way. It is your responsibility to ensure you have backed up any important information before initiating the account deletion process.
+
+Third-Party Accounts: If you have linked your account to third-party services or platforms (e.g., social media accounts), the deletion of your account with us may not automatically delete your accounts on these third-party services. You are responsible for managing and deleting your accounts on such third-party services separately.
+
+Data Retention: Some data may be retained for a reasonable period as required by applicable laws or regulations, or for legitimate business purposes, even after the deletion of your account. We will handle any retained data in accordance with our Privacy Policy.
+
+No Liability: You acknowledge that the Company shall not be liable for any loss, damage, or consequences arising from the deletion of your account, including but not limited to the loss of data, content, or access to our services.
+
+User Responsibility: You are solely responsible for all actions taken on your account, including the initiation of the account deletion process. The Company will not be responsible for any unauthorized access or use of your account after you have initiated the deletion process.
+
+Modification of Terms: The Company reserves the right to modify or update the terms of this Disclaimer at any time. Any changes will be effective upon posting on our platform or website, and it is your responsibility to review these terms periodically.
+
+By proceeding with the account deletion process, you confirm that you have read, understood, and agreed to the terms and conditions outlined in this Disclaimer. If you do not agree with any part of this Disclaimer, please do not initiate the account deletion process.
+
+For any questions or concerns regarding account deletion, please contact our customer support team.</mutableString>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="KdZ-uZ-Hkv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="zfX-L9-xgc"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi7-sE-QPG">
+                                <rect key="frame" x="153" y="711" width="85" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="confirmChangesTapped:" destination="pAj-lY-VDl" eventType="touchUpInside" id="hyQ-aa-Jnf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SgF-xd-SDg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Delete Account" id="OHr-TW-C1Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bE-vp-4kh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-192" y="1595"/>
+            <point key="canvasLocation" x="1136.9230769230769" y="1884.5971563981043"/>
         </scene>
         <!--Feed-->
         <scene sceneID="Ix4-U5-aah">
@@ -361,6 +433,9 @@
         <image name="circle.hexagonpath" catalog="system" width="128" height="115"/>
         <image name="gearshape.circle" catalog="system" width="128" height="123"/>
         <image name="person.2.crop.square.stack" catalog="system" width="105" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

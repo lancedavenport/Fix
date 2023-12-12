@@ -82,9 +82,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-    
-    
+
     // Helper methods
     func showError(_ label: UILabel, _ errorMessage: String) {
         label.textColor = .systemRed
