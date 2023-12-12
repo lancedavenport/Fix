@@ -12,6 +12,8 @@ import FirebaseStorage
 import MessageKit
 
 extension UIImageView {
+    // Sets the UIImageView to be circular. This is typically used for profile images.
+    // Note: Ensure the UIImageView has equal width and height to maintain the circular shape.
     func setCircular() {
         self.contentMode = .scaleAspectFill
         self.layer.cornerRadius = self.frame.size.width / 2
@@ -19,6 +21,7 @@ extension UIImageView {
     }
 }
 
+// Represents a user with essential properties like name, uid, and email.
 struct User {
     let firstName: String
     let lastName: String
@@ -26,81 +29,74 @@ struct User {
     let email: String
 }
 
-
 // used for Firestore Database
 final class DatabaseManager {
-    static let shared = DatabaseManager() // Singleton instance
+    static let shared = DatabaseManager()
 
-    private let db = Firestore.firestore()
+        private let db = Firestore.firestore()
 
-    private init() {}
+        private init() {}
 
-    func getUsers(completion: @escaping (Result<[User], Error>) -> Void) {
-        let usersCollection = db.collection("users")
+        // Fetches and returns a list of users from the Firestore Database.
+        func getUsers(completion: @escaping (Result<[User], Error>) -> Void) {
+            let usersCollection = db.collection("users")
 
-        usersCollection.getDocuments { (querySnapshot, error) in
-            if let error = error {
-                print("Error getting users: \(error.localizedDescription)")
-                completion(.failure(error))
-            } else {
-                let users = querySnapshot?.documents.compactMap { document -> User? in
-                    guard
-                        let firstName = document["first_name"] as? String,
-                        let lastName = document["last_name"] as? String,
-                        let uid = document["uid"] as? String,
-                        let email = document["email"] as? String
-                    else {
-                        return nil
-                    }
-                    return User(firstName: firstName, lastName: lastName, uid: uid, email: email)
+            usersCollection.getDocuments { (querySnapshot, error) in
+                // Handle errors in fetching documents.
+                if let error = error {
+                    completion(.failure(error))
+                    return
+                }
+
+                // Parse documents to User objects.
+                let users = querySnapshot?.documents.compactMap { document in
+                    return self.parseUser(from: document)
                 } ?? []
                 completion(.success(users))
             }
         }
-    }
-    
-    
-    func getUser(uid: String?, completion: @escaping (Result<User, Error>) -> Void) {
-        // Reference to the "users" collection
-        let usersCollection = db.collection("users")
-        
-        guard let uid = uid, !uid.isEmpty else {
-            let uidError = NSError(domain: "Firestore", code: 400, userInfo: [NSLocalizedDescriptionKey: "UID is nil or empty"])
-            completion(.failure(uidError))
-            return
-        }
-        
-        let userDocument = usersCollection.document(uid)
-        
-        // Fetch data from Firestore
-        userDocument.getDocument { document, error in
-            if let error = error {
-                // Handle the error
-                completion(.failure(error))
+
+        // Fetches a user by UID from the Firestore Database.
+        func getUser(uid: String?, completion: @escaping (Result<User, Error>) -> Void) {
+            let usersCollection = db.collection("users")
+            
+            // Ensure UID is valid.
+            guard let uid = uid, !uid.isEmpty else {
+                let uidError = NSError(domain: "Firestore", code: 400, userInfo: [NSLocalizedDescriptionKey: "UID is nil or empty"])
+                completion(.failure(uidError))
                 return
             }
             
-            // Check if the document exists
-            guard let document = document, document.exists else {
-                let notFoundError = NSError(domain: "Firestore", code: 404, userInfo: nil)
-                completion(.failure(notFoundError))
-                return
-            }
+            let userDocument = usersCollection.document(uid)
             
-            if let userData = document.data(),
-               let firstName = userData["first_name"] as? String,
-               let lastName = userData["last_name"] as? String,
-               let email = userData["email"] as? String,
-               let uid = userData["uid"] as? String {
-                let user = User(firstName: firstName, lastName: lastName, uid: uid, email: email)
+            // Fetch user document.
+            userDocument.getDocument { document, error in
+                if let error = error {
+                    completion(.failure(error))
+                    return
+                }
+                
+                guard let document = document, document.exists, let user = self.parseUser(from: document) else {
+                    let notFoundError = NSError(domain: "Firestore", code: 404, userInfo: nil)
+                    completion(.failure(notFoundError))
+                    return
+                }
+                
                 completion(.success(user))
-            } else {
-                // Handle the case where the data doesn't match the expected structure
-                let parsingError = NSError(domain: "Firestore", code: 500, userInfo: nil)
-                completion(.failure(parsingError))
             }
         }
-    }
+    
+        // Helper method to parse a Firestore document to a User object.
+        private func parseUser(from document: DocumentSnapshot) -> User? {
+            guard let userData = document.data(),
+                  let firstName = userData["first_name"] as? String,
+                  let lastName = userData["last_name"] as? String,
+                  let email = userData["email"] as? String,
+                  let uid = userData["uid"] as? String else {
+                return nil
+            }
+            return User(firstName: firstName, lastName: lastName, uid: uid, email: email)
+        }
     
     func getUsersByIDs(userIDs: [String], completion: @escaping ([User]) -> Void) {
         var users: [User] = []
