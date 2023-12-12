@@ -56,6 +56,7 @@
 		79A8C4542AF974460072F483 /* FixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C4532AF974460072F483 /* FixTests.swift */; };
 		79A8C45E2AF974460072F483 /* FixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C45D2AF974460072F483 /* FixUITests.swift */; };
 		79A8C4602AF974460072F483 /* FixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8C45F2AF974460072F483 /* FixUITestsLaunchTests.swift */; };
+		79DC40152B28FDA80034D208 /* UsersMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC40142B28FDA80034D208 /* UsersMatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		79A8C4592AF974460072F483 /* FixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A8C45D2AF974460072F483 /* FixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixUITests.swift; sourceTree = "<group>"; };
 		79A8C45F2AF974460072F483 /* FixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79DC40142B28FDA80034D208 /* UsersMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				03B4D4FE2B131549009ADE1A /* UserEnvironmentTabBarController.swift */,
 				03B4D4B42B12F328009ADE1A /* FeedViewController.swift */,
 				03B4D4FA2B130C49009ADE1A /* FriendsViewController.swift */,
+				79DC40142B28FDA80034D208 /* UsersMatchViewController.swift */,
 				03EC1A062B199E7D008ED680 /* Setting */,
 				03EC1A052B199E6F008ED680 /* Message */,
 			);
@@ -431,6 +434,7 @@
 				03BBDC482B1561DE00597FBE /* SignUpBioViewController.swift in Sources */,
 				790786952B17AE51008AE882 /* EditUserProfileViewController.swift in Sources */,
 				0362F2312B0F53D3000B7A1C /* SignUpViewController.swift in Sources */,
+				79DC40152B28FDA80034D208 /* UsersMatchViewController.swift in Sources */,
 				79A8C43D2AF974430072F483 /* AppDelegate.swift in Sources */,
 				03B4D4F92B130C38009ADE1A /* SettingViewController.swift in Sources */,
 				03B4D4FB2B130C49009ADE1A /* FriendsViewController.swift in Sources */,
