@@ -1,141 +1,94 @@
-//
-//  MessageViewController.swift
-//  Fix
-//
-//  Created by Devin on 2023/11/25.
-//
-
 import UIKit
 import Firebase
 
 class FriendsViewController: UIViewController {
     
+    // MARK: - Properties
+    @IBOutlet var usersTableView: UITableView!
+    private var allUsers: [User] = []
+    private var filteredUsers: [User] = []
+    private let searchController = UISearchController(searchResultsController: nil)
     
-    @IBOutlet var chatRoomsTableView: UITableView!
-    
-    private var conversationUsers: [User]?
-    
-    private var currentUser: User?
-    
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search,
-                                                            target: self,
-                                                            action: #selector(composeTapped))
+        setUpSearchController()
         setUpTableView()
-        fetchConversations()
+        fetchAllUsers()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.isHidden = false
-        
-        // get currentUser infos
-        DatabaseManager.shared.getUser(uid: Auth.auth().currentUser?.uid) { result in
+    // MARK: - UI Setup
+    private func setUpSearchController() {
+        // Setup for the search controller
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Users"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
+    
+    private func setUpTableView() {
+        usersTableView.register(UITableViewCell.self, forCellReuseIdentifier: "userCell")
+        usersTableView.delegate = self
+        usersTableView.dataSource = self
+    }
+    
+    // MARK: - Data Handling
+    private func fetchAllUsers() {
+        DatabaseManager.shared.getUsers { [weak self] result in
             switch result {
-            case .success(let user):
-                self.currentUser = user
-                RealTimeDatabaseManager.shared.getAllConversationIDs(currentUser: self.currentUser!) { conversationIDs in
-                    print("currentUser Conversations Id array: \(conversationIDs)")
-                    DatabaseManager.shared.getUsersByIDs(userIDs: conversationIDs) { conversationUsers in
-                        print("currentUser Conversations Users array: \(conversationUsers)")
-                        self.conversationUsers = conversationUsers
-                        self.chatRoomsTableView.reloadData()
-                        self.listenAndUpateConversationUsers(currentUser: self.currentUser!)
-                    }
-                }
+            case .success(let users):
+                // Successfully got the users
+                self?.allUsers = users
+                self?.filteredUsers = users
+                self?.usersTableView.reloadData()
             case .failure(let error):
-                self.currentUser = User(firstName: "Default", lastName: "User", uid: "defaultUID", email: "default@example.com")
-                print(error.localizedDescription)
+                // Handle error scenario
+                print("Error fetching users: \(error)")
             }
         }
     }
+
     
-    private func listenAndUpateConversationUsers(currentUser: User) {
-        let realTimeDB = Database.database().reference().child("users")
-        let messagesRef = realTimeDB.child(currentUser.uid).child("conversations")
-        // Use .childAdded event to observe new messages
-        messagesRef.observe(.childAdded) { [weak self] snapshot in
-            RealTimeDatabaseManager.shared.getAllConversationIDs(currentUser: currentUser) { [weak self] conversationIDs in
-                DatabaseManager.shared.getUsersByIDs(userIDs: conversationIDs) { [weak self] conversationUsers in
-                    self?.conversationUsers = conversationUsers
-                    self?.chatRoomsTableView.reloadData()
-                }
-            }
+    private func filterUsers(for searchText: String) {
+        filteredUsers = allUsers.filter { user in
+            return user.firstName.lowercased().contains(searchText.lowercased()) ||
+                   user.lastName.lowercased().contains(searchText.lowercased())
         }
-        // Use .childChanged event to observe changes in existing messages
-        messagesRef.observe(.childChanged) { [weak self] snapshot in
-            RealTimeDatabaseManager.shared.getAllConversationIDs(currentUser: currentUser) { [weak self] conversationIDs in
-                DatabaseManager.shared.getUsersByIDs(userIDs: conversationIDs) { [weak self] conversationUsers in
-                    self?.conversationUsers = conversationUsers
-                    self?.chatRoomsTableView.reloadData()
-                }
-            }
-        }
+        
+        usersTableView.reloadData()
     }
     
-    
-    @objc func composeTapped() {
-        let vc = NewConversationViewController()
-        vc.completion = { [weak self] targetUser in
-            self?.createNewConversation(targetUser: targetUser)
-            print(targetUser)
-        }
-        let navVC = UINavigationController(rootViewController: vc)
-        present(navVC, animated: true)
-    }
-    
-    
-    func createNewConversation(targetUser: User) {
-        let vc = ChatViewController(otherUser: targetUser)
-        vc.title = "\(targetUser.firstName) \(targetUser.lastName)"
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    
-    func setUpTableView() {
-        chatRoomsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        chatRoomsTableView.delegate = self
-        chatRoomsTableView.dataSource = self
-    }
-    
-    
-    func fetchConversations() {
+    // MARK: - Navigation
+    private func navigateToUserProfile(for user: User) {
+        // Navigate to the selected user's profile or chat
     }
 }
 
-
-extension ConversationsViewController:  UITableViewDelegate, UITableViewDataSource {
-    
+// MARK: - TableView Delegate and DataSource
+extension SearchFriendsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let conversationUsers = self.conversationUsers {
-            print(conversationUsers)
-            return conversationUsers.count
-        }
-        return 0
+        return filteredUsers.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if let conversationUsers = self.conversationUsers {
-            let name = "\(conversationUsers[indexPath.row].firstName) \(conversationUsers[indexPath.row].lastName)"
-            let email = "\(conversationUsers[indexPath.row].email)"
-            cell.textLabel?.text = "\(name) \(email)"
-            cell.accessoryType = .disclosureIndicator
-            return cell
-        }
-        cell.textLabel?.text = "conversationUsers is nill"
-        cell.accessoryType = .disclosureIndicator
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+        let user = filteredUsers[indexPath.row]
+        cell.textLabel?.text = "\(user.firstName) \(user.lastName)"
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if let conversationUsers = self.conversationUsers {
-            createNewConversation(targetUser: conversationUsers[indexPath.row])
-        }
+        navigateToUserProfile(for: filteredUsers[indexPath.row])
     }
-    
 }
+
+// MARK: - Search Results Updating
+extension FriendsViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchText = searchController.searchBar.text else { return }
+        filterUsers(for: searchText)
+    }
+}
+
