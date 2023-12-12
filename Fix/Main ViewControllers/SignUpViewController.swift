@@ -12,32 +12,64 @@ import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
+    // Outlets for the user input fields.
     @IBOutlet weak var firstNameTextField: UITextField!
-    
     @IBOutlet weak var lastNameTextField: UITextField!
-    
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passWordTextField: UITextField!
-    
     @IBOutlet weak var comfirmPasswordTextField: UITextField!
     
+    // Outlet for the sign-up button.
     @IBOutlet weak var signUpButton: UIButton!
     
+    // Outlet for displaying error messages.
     @IBOutlet weak var errorLabel: UILabel!
     
+    // Identifier for the segue to the next screen.
     let toSignUpBioSegue = "toSignUpBioSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        errorLabel.alpha = 0
-        passWordTextField.isSecureTextEntry.toggle()
-        comfirmPasswordTextField.isSecureTextEntry.toggle()
+        // Initial setup for the view.
+        errorLabel.alpha = 0  // Initially hide the error label.
+        passWordTextField.isSecureTextEntry.toggle()  // Secure entry for password.
+        comfirmPasswordTextField.isSecureTextEntry.toggle()  // Secure entry for password confirmation.
     }
     
-    // Check fields before navigating to more info screen. Show error message if needed.
+    func validateFields() -> String? {
+        // Validation logic for each field.
+        if isTextFieldEmpty(firstNameTextField) || isTextFieldEmpty(lastNameTextField) {
+            return "Enter your first and last name"
+        }
+        if isTextFieldEmpty(emailTextField) {
+            return "Enter your email address"
+        }
+        if let email = emailTextField.text, !isValidEmailAddr(strToValidate: email) {
+            return "Enter a correct email address"
+        }
+        if isTextFieldEmpty(passWordTextField) {
+            return "Enter a password to use"
+        }
+        if let password = passWordTextField.text, !isPasswordValid(password) {
+            return "Password needs to contain at least one digit, one upper case letter, one lower case letter, and be 8 characters long"
+        }
+        if isTextFieldEmpty(comfirmPasswordTextField) {
+            return "Confirm your password"
+        }
+        if let pw = passWordTextField.text, let cpw = comfirmPasswordTextField.text, pw != cpw {
+            return "Your password confirmation does not match your password"
+        }
+        return nil
+        // Returns a string if there is an error, or nil if everything is fine.
+    }
+    
+    // Action for the sign-up button.
     @IBAction func signUpTapped(_ sender: Any) {
+        // Check for validation errors.
+        if let error = validateFields() {
+            showError(errorLabel, error)  // Show the error if present.
+            return
+        }
         
         // goToSignUpBio()
         
@@ -128,26 +160,31 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    // Navigates to the next part of the sign-up process.
     func goToSignUpBio() {
         performSegue(withIdentifier: toSignUpBioSegue, sender: self)
     }
     
     // Helper methods
+    
+    // Displays an error message on the specified label.
     func showError(_ label: UILabel, _ errorMessage: String) {
-        label.textColor = .systemRed
         label.text = errorMessage
-        label.alpha = 1
+        label.alpha = 0
+        UIView.animate(withDuration: 1.0) {
+            label.alpha = 1
+        }
     }
     
+    // Checks if a text field is empty.
     func isTextFieldEmpty(_ textField: UITextField) -> Bool {
-        return textField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+        return textField.text?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ?? true
     }
     
+    // Validates an email address.
     func isValidEmailAddr(strToValidate: String) -> Bool {
       let emailValidationRegex = "^[\\p{L}0-9!#$%&'*+\\/=?^_`{|}~-][\\p{L}0-9.!#$%&'*+\\/=?^_`{|}~-]{0,63}@[\\p{L}0-9-]+(?:\\.[\\p{L}0-9-]{2,7})*$"
-
       let emailValidationPredicate = NSPredicate(format: "SELF MATCHES %@", emailValidationRegex)
-
       return emailValidationPredicate.evaluate(with: strToValidate)
     }
     
