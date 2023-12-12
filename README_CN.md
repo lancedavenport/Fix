@@ -1,5 +1,7 @@
 # Fix 应用
 
+[English](./README.md) / 简体中文 / [日本語](./README_JP.md) / [Español](./README_ES.md)
+
 ## 介绍
 向您介绍Fix - 一种全新的在线约会方式。与传统平台不同，Fix专注于由朋友安排的半盲约会，提供更真实、更令人兴奋的约会体验。
 
