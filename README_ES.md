@@ -1,5 +1,7 @@
 # Aplicación Fix
 
+[English](./README.md) / [简体中文](./README_CN.md) / [日本語](./README_JP.md) / Español
+
 ## Introducción
 Presentamos Fix: un enfoque novedoso para las citas en línea. A diferencia de las plataformas tradicionales, Fix se centra en citas semi a ciegas organizadas por amigos, ofreciendo una experiencia de citas más auténtica y emocionante.
 
