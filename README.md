@@ -1,5 +1,7 @@
 # Fix App
 
+English / [简体中文](./README_CN.md) / [日本語](./README_JP.md) / [Español](./README_ES.md)
+
 ## Introduction
 Introducing Fix - a new approach to online dating. Unlike traditional platforms, Fix focuses on semi-blind dates set up by friends, offering a more genuine and exciting dating experience.
 
