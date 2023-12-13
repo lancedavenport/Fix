@@ -36,9 +36,9 @@ class ConversationsViewController: UIViewController {
             case .success(let user):
                 self.currentUser = user
                 RealTimeDatabaseManager.shared.getAllConversationIDs(currentUser: self.currentUser!) { conversationIDs in
-                    print("currentUser Conversations Id array: \(conversationIDs)")
+                    // print("currentUser Conversations Id array: \(conversationIDs)")
                     DatabaseManager.shared.getUsersByIDs(userIDs: conversationIDs) { conversationUsers in
-                        print("currentUser Conversations Users array: \(conversationUsers)")
+                        // print("currentUser Conversations Users array: \(conversationUsers)")
                         self.conversationUsers = conversationUsers
                         self.chatRoomsTableView.reloadData()
                         self.listenAndUpateConversationUsers(currentUser: self.currentUser!)
@@ -79,7 +79,7 @@ class ConversationsViewController: UIViewController {
         let vc = NewConversationViewController()
         vc.completion = { [weak self] targetUser in
             self?.createNewConversation(targetUser: targetUser)
-            print(targetUser)
+            // print(targetUser)
         }
         let navVC = UINavigationController(rootViewController: vc)
         present(navVC, animated: true)
@@ -109,7 +109,7 @@ extension ConversationsViewController:  UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let conversationUsers = self.conversationUsers {
-            print(conversationUsers)
+            // print(conversationUsers)
             return conversationUsers.count
         }
         return 0
