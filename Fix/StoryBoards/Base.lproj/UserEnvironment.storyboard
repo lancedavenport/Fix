@@ -77,7 +77,8 @@
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="logoutTapped:" destination="01J-lp-oVM" eventType="touchUpInside" id="szm-9F-9Wv"/>
+                                    <action selector="logoutTapped:" destination="01J-lp-oVM" eventType="touchUpInside" id="jMj-GQ-fTY"/>
+                                    <segue destination="TSR-Ga-slg" kind="show" identifier="goToMain" id="ZCH-xf-Irj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -329,6 +330,16 @@ For any questions or concerns regarding account deletion, please contact our cus
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bE-vp-4kh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136.9230769230769" y="1884.5971563981043"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Xtt-HP-a6c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="TSR-Ga-slg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Ad-9d-vMU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekb-t0-aY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="1631"/>
         </scene>
         <!--Feed-->
         <scene sceneID="Ix4-U5-aah">

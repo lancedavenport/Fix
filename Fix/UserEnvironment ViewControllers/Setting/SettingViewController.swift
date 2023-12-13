@@ -18,7 +18,7 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var profilePicture: UIImageView!
     
     let toEditUserProfileSegue = "toEdituserProfileSegue"
-    let toMainSegue = "toMainSegue"
+    let toMainSegue = "goToMain"
     let storage = Storage.storage()
     var storageRef: StorageReference? = nil
     var uid: String? = nil
@@ -37,7 +37,8 @@ class SettingViewController: UIViewController {
         loadSavedUserImageTo(imageView: profilePicture)
     }
 
-    @IBAction func logoutTapped(_ sender: Any) {
+
+    @IBAction func logoutTapped(_ sender: UIButton) {
         let firebaseAuth = Auth.auth()
         do {
           try firebaseAuth.signOut()
