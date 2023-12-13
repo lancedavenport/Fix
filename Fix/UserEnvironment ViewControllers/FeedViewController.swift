@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseStorage
+import SwiftUI
 
 class FeedViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var userBio: UILabel!
     @IBOutlet weak var swipeNoOutlet: UIButton!
     @IBOutlet weak var swipeYesOutlet: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     
     let storage = Storage.storage()
     var storageRef: StorageReference? = nil
@@ -44,7 +46,7 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        
         getUserSeen { (seenArray, error) in
             if let error = error {
                 print(error)
@@ -55,6 +57,8 @@ class FeedViewController: UIViewController {
         }
         self.storageRef = storage.reference()
         self.uid = Auth.auth().currentUser!.uid
+        self.swipeYesOutlet.tintColor = UIColor.systemGreen
+        self.swipeNoOutlet.tintColor = UIColor.systemRed
         getAllUsers() {
             self.showNewPerson { (bio, error) in
                 if let error = error {
@@ -64,12 +68,12 @@ class FeedViewController: UIViewController {
                 }
             }
         }
-        
     }
-
+    
+    
     
     @IBAction func swipeYes(_ sender: Any) {
-        if isMatch(myUID: self.uid ?? "", theirUID: self.userShown) {
+        if isMatch(myUID: self.uid!, theirUID: self.userShown) {
             
         }
         updateUserLiked()
@@ -86,7 +90,7 @@ class FeedViewController: UIViewController {
         
         
     }
-
+    
     @IBAction func swipeNo(_ sender: Any) {
         updateUserSeen()
         
@@ -105,11 +109,11 @@ class FeedViewController: UIViewController {
     func updateUserLiked() {
         DispatchQueue.main.async {
             self.userLiked.append(self.userShown)
-               
+            
             let db = Firestore.firestore()
             let uid = Auth.auth().currentUser!.uid
             let dbCollection = db.collection("users")
-               
+            
             dbCollection.document(uid).updateData(["liked": self.userLiked!]) { error in
                 if let error = error {
                     print(error)
@@ -130,13 +134,13 @@ class FeedViewController: UIViewController {
                     let db = Firestore.firestore()
                     let uid = Auth.auth().currentUser!.uid
                     let dbCollection = db.collection("users")
-                       
+                    
                     dbCollection.document(uid).updateData(["seen": self.userSeen!]) { error in
                         if let error = error {
                             print(error)
                         }
                     }
-
+                    
                 } else {
                     let filePath = "default/noMorePeople.jpeg"
                     Storage.storage().reference().child(filePath).getData(maxSize: 10*1024*1024) { data, error in
@@ -147,6 +151,7 @@ class FeedViewController: UIViewController {
                         } else {
                             self.userImage.image = UIImage(data: data!)
                             self.userBio.text = "No more people to swipe on"
+                            self.nameLabel.text = "No more people to swipe on"
                             self.swipeNoOutlet.isEnabled = false
                             self.swipeYesOutlet.isEnabled = false
                         }
@@ -160,8 +165,8 @@ class FeedViewController: UIViewController {
                         }
                     }
                 }
-               
-               
+                
+                
             } else {
                 
                 let filePath = "default/noMorePeople.jpeg"
@@ -173,6 +178,7 @@ class FeedViewController: UIViewController {
                     } else {
                         self.userImage.image = UIImage(data: data!)
                         self.userBio.text = "No more people to swipe on"
+                        self.nameLabel.text = "No more people to swipe on"
                         self.swipeNoOutlet.isEnabled = false
                         self.swipeYesOutlet.isEnabled = false
                     }
@@ -186,61 +192,56 @@ class FeedViewController: UIViewController {
                     }
                 }
             }
-           
         }
     }
     
-
+    
     func isMatch(myUID: String, theirUID: String) -> Bool {
         var myMatches: [String] = []
         var theirLikes: [String] = []
         var theirMatches: [String] = []
         var matched: Bool = false
-
+        
         let db = Firestore.firestore()
         let uid = Auth.auth().currentUser!.uid
         let dbCollection = db.collection("users")
         
-
-
         dbCollection.document(theirUID).getDocument { (document, error) in
             if let error = error {
                 print("Error fetching data for other user: \(error.localizedDescription)")
                 return
             }
-
+            
             guard let document = document, document.exists else {
                 print("Document for other user does not exist")
                 return
             }
-
+            
             let data = document.data()
             theirLikes = data?["liked"] as? [String] ?? []
             theirMatches = data?["matches"] as? [String] ?? []
             print(theirLikes)
-
+            
             // Check for a match
             if theirLikes.contains(myUID) {
                 myMatches.append(theirUID)
-                print(myMatches)
                 dbCollection.document(uid).updateData(["matches": myMatches]) { error in
                     if let error = error {
                         print("Error updating my matches: \(error.localizedDescription)")
                     }
                 }
-                print(theirMatches)
                 theirMatches.append(myUID)
                 dbCollection.document(theirUID).updateData(["matches": theirMatches]) { error in
                     if let error = error {
                         print("Error updating other user's matches: \(error.localizedDescription)")
                     }
                 }
-               matched = true
+                matched = true
             }
         }
         return matched
     }
-
+    
     
     func findNewPerson() {
         for user in self.users {
@@ -267,20 +268,21 @@ class FeedViewController: UIViewController {
                 completion(nil, error)
                 return
             }
-
+            
             if let document = document, document.exists {
                 let data = document.data()
                 var bio = data?["bio"] as? String ?? "No bio found"
-                var name = data?["first_name"]
+                var name = data?["first_name"] as? String ?? "No name found"
                 self.userBio.text = bio
+                self.nameLabel.text = name
                 completion(bio, nil)
             } else {
                 print("document does not exist")
                 completion(nil, nil)
             }
         }
-       
-    
+        
+        
         
         return
     }
@@ -295,7 +297,7 @@ class FeedViewController: UIViewController {
                 completion(nil, error)
                 return
             }
-
+            
             if let document = document, document.exists {
                 let data = document.data()
                 let seenArray = data?["seen"] as? [String] ?? []
@@ -306,14 +308,5 @@ class FeedViewController: UIViewController {
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
 }
