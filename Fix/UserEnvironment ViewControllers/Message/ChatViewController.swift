@@ -36,6 +36,10 @@ class ChatViewController: MessagesViewController {
     private var currentUser: User?
     private var otherUser: User
     
+    private var currentUserImage: UIImage?
+    
+    private var otherUserImage: UIImage?
+    
     private var selfSender: Sender?
     
     private var isNewConversation = true
@@ -60,6 +64,27 @@ class ChatViewController: MessagesViewController {
             case .success(let user):
                 self.currentUser = user
                 self.selfSender = Sender(senderId: user.uid, displayName: "\(user.firstName) \(user.lastName)")
+                
+                FBStorageManager.shared.getUserProfileImage(uid: self.currentUser!.uid) { result in
+                    switch result {
+                    case .success (let image):
+                        self.currentUserImage = image
+                        self.messagesCollectionView.reloadData()
+                    case .failure(let error):
+                        print("Failed to get user profile image: \(error.localizedDescription)")
+                    }
+                }
+                
+                FBStorageManager.shared.getUserProfileImage(uid: self.otherUser.uid) { result in
+                    switch result {
+                    case .success (let image):
+                        self.otherUserImage = image
+                        self.messagesCollectionView.reloadData()
+                    case .failure(let error):
+                        print("Failed to get user profile image: \(error.localizedDescription)")
+                    }
+                }
+                
                 RealTimeDatabaseManager.shared.fetchAndCreateMessages(currentUserUID: self.currentUser!.uid, otherUserUID: self.otherUser.uid) { messages in
                     self.messages = messages
                     self.messagesCollectionView.reloadData()
@@ -154,5 +179,25 @@ extension ChatViewController: MessagesDataSource, MessagesLayoutDelegate, Messag
         return messages.count
     }
     
+    func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
+        let sender = message.sender
+        
+        switch sender.senderId {
+        case currentUser?.uid:
+            if let userImage = self.currentUserImage {
+                avatarView.set(avatar: Avatar(image: userImage))
+            } else {
+                avatarView.set(avatar: Avatar())
+            }
+        case otherUser.uid:
+            if let userImage = self.otherUserImage {
+                avatarView.set(avatar: Avatar(image: userImage))
+            }else {
+                avatarView.set(avatar: Avatar())
+            }
+        default:
+            avatarView.set(avatar: Avatar())
+        }
+    }
     
 }
