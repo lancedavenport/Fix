@@ -37,7 +37,6 @@ class LoginViewController: UIViewController {
         // validate fields
         if isTextFieldEmpty(emailTextField) || isTextFieldEmpty(passwordTextField) {
             showError(errorLabel, "Enter email and password")
-            // Need to follow step on below link so it does not send fake error message caused by using simulator https://firebase.google.com/docs/app-check/ios/debug-provider
             return
         } else {
             errorLabel.alpha = 0
@@ -49,7 +48,8 @@ class LoginViewController: UIViewController {
         // log in
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let error = error {
-                self.showError(self.errorLabel, error.localizedDescription)
+                self.showError(self.errorLabel, "Password or email is incorrect")
+                // Need to follow step on below link so it does not send fake error message caused by using simulator https://firebase.google.com/docs/app-check/ios/debug-provider
             } else {
                 self.errorLabel.alpha = 0
                 // hide navigation bar
