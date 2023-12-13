@@ -59,6 +59,7 @@ class FeedViewController: UIViewController {
         self.uid = Auth.auth().currentUser!.uid
         self.swipeYesOutlet.tintColor = UIColor.systemGreen
         self.swipeNoOutlet.tintColor = UIColor.systemRed
+        
         getAllUsers() {
             self.showNewPerson { (bio, error) in
                 if let error = error {
@@ -69,8 +70,6 @@ class FeedViewController: UIViewController {
             }
         }
     }
-    
-    
     
     @IBAction func swipeYes(_ sender: Any) {
         if isMatch(myUID: self.uid!, theirUID: self.userShown) {
@@ -86,9 +85,6 @@ class FeedViewController: UIViewController {
                 print("Success")
             }
         }
-        
-        
-        
     }
     
     @IBAction func swipeNo(_ sender: Any) {
@@ -166,9 +162,7 @@ class FeedViewController: UIViewController {
                     }
                 }
                 
-                
             } else {
-                
                 let filePath = "default/noMorePeople.jpeg"
                 Storage.storage().reference().child(filePath).getData(maxSize: 10*1024*1024) { data, error in
                     if let error = error {
