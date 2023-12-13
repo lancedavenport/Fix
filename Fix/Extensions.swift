@@ -127,6 +127,39 @@ final class DatabaseManager {
     
 }
 
+final class FBStorageManager {
+    
+    static let shared = FBStorageManager()
+    
+    private let storage = Storage.storage()
+    
+    private init() {}
+    
+    public func getUserProfileImage(uid: String, completion: @escaping (Result<UIImage, Error>) -> Void) {
+        let storageRef = storage.reference()
+        let imagePath = "\(uid)/userPhoto"
+
+        let imageRef = storageRef.child(imagePath)
+
+        // Download in memory with a maximum allowed size of 1MB (adjust as needed)
+        imageRef.getData(maxSize: 10 * 1024 * 1024) { data, error in
+            if let error = error {
+                completion(.failure(error))
+                print("Error downloading image: \(error.localizedDescription)")
+            } else {
+                // Successfully downloaded data, convert it to UIImage
+                if let imageData = data, let image = UIImage(data: imageData) {
+                    completion(.success(image))
+                } else {
+                    let decodingError = NSError(domain: "Image Decoding Error", code: 0, userInfo: nil)
+                    completion(.failure(decodingError))
+                }
+            }
+        }
+    }
+    
+}
+
 
 // used for messaging, Firebase Realtime Database
 final class RealTimeDatabaseManager {
