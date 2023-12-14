@@ -1,7 +1,6 @@
 import UIKit
 import Firebase
 
-
 // Define your custom PossibleFriendView
 class PossibleFriendView: UIView {
     // Add your UI elements here (e.g., labels, buttons)
