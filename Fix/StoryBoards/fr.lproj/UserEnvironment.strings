@@ -1,98 +1,99 @@
+
 /* Class = "UILabel"; text = "Confirm password"; ObjectID = "5uj-ya-5dQ"; */
-"5uj-ya-5dQ.text" = "パスワードを確認";
+"5uj-ya-5dQ.text" = "Confirm password";
 
 /* Class = "UINavigationItem"; title = "Edit Profile Data"; ObjectID = "9nt-YZ-3qr"; */
-"9nt-YZ-3qr.title" = "プロフィールデータを編集";
+"9nt-YZ-3qr.title" = "Edit Profile Data";
 
 /* Class = "UIButton"; configuration.title = "Logout"; ObjectID = "ABd-17-k5P"; */
-"ABd-17-k5P.configuration.title" = "ログアウト";
+"ABd-17-k5P.configuration.title" = "Logout";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ABd-17-k5P"; */
-"ABd-17-k5P.normalTitle" = "ボタン";
+"ABd-17-k5P.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Change profile picture"; ObjectID = "BAJ-gN-rTB"; */
-"BAJ-gN-rTB.configuration.title" = "プロフィール写真を変更";
+"BAJ-gN-rTB.configuration.title" = "Change profile picture";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BAJ-gN-rTB"; */
-"BAJ-gN-rTB.normalTitle" = "ボタン";
+"BAJ-gN-rTB.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "X"; ObjectID = "CKI-9F-jQ9"; */
 "CKI-9F-jQ9.configuration.title" = "X";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CKI-9F-jQ9"; */
-"CKI-9F-jQ9.normalTitle" = "ボタン";
+"CKI-9F-jQ9.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Hi, there!"; ObjectID = "Hbg-oe-lSS"; */
-"Hbg-oe-lSS.text" = "こんにちは！";
+"Hbg-oe-lSS.text" = "Hi, there!";
 
 /* Class = "UISearchBar"; placeholder = "Search for Friends"; ObjectID = "LYx-tV-mvz"; */
-"LYx-tV-mvz.placeholder" = "友達を検索";
+"LYx-tV-mvz.placeholder" = "Search for Friends";
 
 /* Class = "UINavigationItem"; title = "Delete Account"; ObjectID = "MH7-wz-2Mm"; */
-"MH7-wz-2Mm.title" = "アカウントを削除";
+"MH7-wz-2Mm.title" = "Delete Account";
 
 /* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "NGn-i0-44P"; */
-"NGn-i0-44P.placeholder" = "パスワードを確認";
+"NGn-i0-44P.placeholder" = "Confirm password";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SrA-KW-ovr"; */
-"SrA-KW-ovr.normalTitle" = "ボタン";
+"SrA-KW-ovr.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Edit Bio"; ObjectID = "TgC-hA-McR"; */
-"TgC-hA-McR.text" = "自己紹介を編集";
+"TgC-hA-McR.text" = "Edit Bio";
 
 /* Class = "UITextField"; placeholder = "Bio"; ObjectID = "ToL-tt-ZuJ"; */
-"ToL-tt-ZuJ.placeholder" = "自己紹介";
+"ToL-tt-ZuJ.placeholder" = "Bio";
 
 /* Class = "UIButton"; configuration.title = "Edit Profile"; ObjectID = "ULJ-kZ-mpp"; */
-"ULJ-kZ-mpp.configuration.title" = "プロフィールを編集";
+"ULJ-kZ-mpp.configuration.title" = "Edit Profile";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ULJ-kZ-mpp"; */
-"ULJ-kZ-mpp.normalTitle" = "ボタン";
+"ULJ-kZ-mpp.normalTitle" = "Button";
 
 /* Class = "UITabBarItem"; title = "Settings"; ObjectID = "VEN-Op-4ic"; */
-"VEN-Op-4ic.title" = "設定";
+"VEN-Op-4ic.title" = "Settings";
 
 /* Class = "UITabBarItem"; title = "Friends"; ObjectID = "Wsu-a0-oVq"; */
-"Wsu-a0-oVq.title" = "友達";
+"Wsu-a0-oVq.title" = "Friends";
 
 /* Class = "UITabBarItem"; title = "Feed"; ObjectID = "YEl-Wc-C4s"; */
-"YEl-Wc-C4s.title" = "フィード";
+"YEl-Wc-C4s.title" = "Feed";
 
 /* Class = "UIButton"; configuration.title = "Delete Account"; ObjectID = "aZv-cF-HlG"; */
-"aZv-cF-HlG.configuration.title" = "アカウントを削除";
+"aZv-cF-HlG.configuration.title" = "Delete Account";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aZv-cF-HlG"; */
-"aZv-cF-HlG.normalTitle" = "ボタン";
+"aZv-cF-HlG.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Confirm changes"; ObjectID = "dpv-ht-dXF"; */
-"dpv-ht-dXF.configuration.title" = "変更を確認";
+"dpv-ht-dXF.configuration.title" = "Confirm changes";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dpv-ht-dXF"; */
-"dpv-ht-dXF.normalTitle" = "ボタン";
+"dpv-ht-dXF.normalTitle" = "Button";
 
 /* Class = "UITextField"; placeholder = "Edit password"; ObjectID = "f1e-Ba-Trx"; */
-"f1e-Ba-Trx.placeholder" = "パスワードを編集";
+"f1e-Ba-Trx.placeholder" = "Edit password";
 
 /* Class = "UITextView"; text = "Effective Date: 12/12/2023\n\nThis Account Deletion Disclaimer (\"Disclaimer\") is provided by The Fix App (\"Company,\" \"we,\" \"us,\" or \"our\") to outline the terms and conditions associated with the deletion of a user account on our platform or website. By requesting the deletion of your account, you acknowledge and agree to the following:\n\nAccount Deletion Process: To delete your account, you must follow the established account deletion process provided on our platform or website. This process may require you to provide specific information or complete certain actions, such as confirming your identity.\n\nPermanent Deletion: When you request the deletion of your account, you understand and accept that your account and associated data will be permanently removed from our system. This includes all personal information, content, and any other data associated with your account.\n\nIrreversible Action: Account deletion is an irreversible action. Once your account is deleted, we cannot recover any of your data or restore your account in any way. It is your responsibility to ensure you have backed up any important information before initiating the account deletion process.\n\nThird-Party Accounts: If you have linked your account to third-party services or platforms (e.g., social media accounts), the deletion of your account with us may not automatically delete your accounts on these third-party services. You are responsible for managing and deleting your accounts on such third-party services separately.\n\nData Retention: Some data may be retained for a reasonable period as required by applicable laws or regulations, or for legitimate business purposes, even after the deletion of your account. We will handle any retained data in accordance with our Privacy Policy.\n\nNo Liability: You acknowledge that the Company shall not be liable for any loss, damage, or consequences arising from the deletion of your account, including but not limited to the loss of data, content, or access to our services.\n\nUser Responsibility: You are solely responsible for all actions taken on your account, including the initiation of the account deletion process. The Company will not be responsible for any unauthorized access or use of your account after you have initiated the deletion process.\n\nModification of Terms: The Company reserves the right to modify or update the terms of this Disclaimer at any time. Any changes will be effective upon posting on our platform or website, and it is your responsibility to review these terms periodically.\n\nBy proceeding with the account deletion process, you confirm that you have read, understood, and agreed to the terms and conditions outlined in this Disclaimer. If you do not agree with any part of this Disclaimer, please do not initiate the account deletion process.\n\nFor any questions or concerns regarding account deletion, please contact our customer support team.\n\n"; ObjectID = "gGt-L5-F6L"; */
-"gGt-L5-F6L.text" = "有効日：2023年12月12日\n\nこのアカウント削除免責事項（「免責事項」）は、The Fix App（「当社」、「我々」、「私たち」、または「当社」）が提供するもので、当社のプラットフォームまたはウェブサイト上でユーザーアカウントを削除する際の条件と規約を概説しています。アカウントの削除を要求することにより、以下に同意し、承認するものとします。\n\nアカウント削除プロセス：アカウントを削除するには、当社のプラットフォームまたはウェブサイトに記載されている確立されたアカウント削除プロセスに従う必要があります。このプロセスでは、特定の情報の提供や、身元の確認などの特定の行動を完了することが求められる場合があります。\n\n永久削除：アカウントの削除を要求すると、アカウントとそれに関連するデータが当社のシステムから永久に削除されることを理解し、受け入れるものとします。これには、個人情報、コンテンツ、およびアカウントに関連するその他のデータがすべて含まれます。\n\n不可逆的な行動：アカウントの削除は不可逆的な行動です。アカウントが削除されると、データを復旧したり、いかなる方法でアカウントを復元したりすることはできません。アカウント削除プロセスを開始する前に、重要な情報をバックアップしておくことは、お客様の責任です。\n\nサードパーティアカウント：アカウントをサードパーティのサービスやプラットフォーム（例えば、ソーシャルメディアアカウント）にリンクしている場合、当社のアカウントを削除しても、これらのサードパーティサービス上のアカウントが自動的に削除されるわけではありません。このようなサードパーティのサービスでのアカウントの管理と削除は、お客様自身の責任です。\n\nデータ保持：アカウントを削除した後も、適用される法律や規則によって要求される、または正当なビジネス目的のために、合理的な期間データを保持する場合があります。保持されるデータは、当社のプライバシーポリシーに従って取り扱われます。\n\n責任なし：アカウントの削除により生じるいかなる損失、損害、または結果についても、当社は責任を負いません。これには、データ、コンテンツ、または当社のサービスへのアクセスの損失が含まれますが、これに限定されません。\n\nユーザーの責任：アカウントで行われるすべての行動、アカウント削除プロセスの開始を含む、一切の責任はお客様にあります。アカウントの削除プロセスを開始した後、アカウントへの不正アクセスや使用について、当社は一切の責任を負いません。\n\n利用規約の変更：当社は、この免責事項の利用規約を随時変更または更新する権利を留保します。変更は、当社のプラットフォームまたはウェブサイトに掲載された時点で有効となります。これらの規約を定期的に確認することは、お客様の責任です。\n\nアカウント削除プロセスを進めることにより、この免責事項に記載された利用規約を読み、理解し、同意したことを確認します。この免責事項の一部に同意しない場合は、アカウント削除プロセスを開始しないでください。\n\nアカウント削除に関するご質問や懸念事項がある場合は、カスタマーサポートチームまでご連絡ください。\n\n";
+"gGt-L5-F6L.text" = "Effective Date: 12/12/2023\n\nThis Account Deletion Disclaimer (\"Disclaimer\") is provided by The Fix App (\"Company,\" \"we,\" \"us,\" or \"our\") to outline the terms and conditions associated with the deletion of a user account on our platform or website. By requesting the deletion of your account, you acknowledge and agree to the following:\n\nAccount Deletion Process: To delete your account, you must follow the established account deletion process provided on our platform or website. This process may require you to provide specific information or complete certain actions, such as confirming your identity.\n\nPermanent Deletion: When you request the deletion of your account, you understand and accept that your account and associated data will be permanently removed from our system. This includes all personal information, content, and any other data associated with your account.\n\nIrreversible Action: Account deletion is an irreversible action. Once your account is deleted, we cannot recover any of your data or restore your account in any way. It is your responsibility to ensure you have backed up any important information before initiating the account deletion process.\n\nThird-Party Accounts: If you have linked your account to third-party services or platforms (e.g., social media accounts), the deletion of your account with us may not automatically delete your accounts on these third-party services. You are responsible for managing and deleting your accounts on such third-party services separately.\n\nData Retention: Some data may be retained for a reasonable period as required by applicable laws or regulations, or for legitimate business purposes, even after the deletion of your account. We will handle any retained data in accordance with our Privacy Policy.\n\nNo Liability: You acknowledge that the Company shall not be liable for any loss, damage, or consequences arising from the deletion of your account, including but not limited to the loss of data, content, or access to our services.\n\nUser Responsibility: You are solely responsible for all actions taken on your account, including the initiation of the account deletion process. The Company will not be responsible for any unauthorized access or use of your account after you have initiated the deletion process.\n\nModification of Terms: The Company reserves the right to modify or update the terms of this Disclaimer at any time. Any changes will be effective upon posting on our platform or website, and it is your responsibility to review these terms periodically.\n\nBy proceeding with the account deletion process, you confirm that you have read, understood, and agreed to the terms and conditions outlined in this Disclaimer. If you do not agree with any part of this Disclaimer, please do not initiate the account deletion process.\n\nFor any questions or concerns regarding account deletion, please contact our customer support team.\n\n";
 
 /* Class = "UIButton"; configuration.title = "Confirm"; ObjectID = "io4-vp-CXf"; */
-"io4-vp-CXf.configuration.title" = "確認";
+"io4-vp-CXf.configuration.title" = "Confirm";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "io4-vp-CXf"; */
-"io4-vp-CXf.normalTitle" = "ボタン";
+"io4-vp-CXf.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Edit password"; ObjectID = "jue-Hr-2dv"; */
-"jue-Hr-2dv.text" = "パスワード編集";
+"jue-Hr-2dv.text" = "Edit password";
 
 /* Class = "UITabBarItem"; title = "Fix"; ObjectID = "kU2-5Q-SC5"; */
-"kU2-5Q-SC5.title" = "修正";
+"kU2-5Q-SC5.title" = "Fix";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "ns8-Xc-Mt5"; */
-"ns8-Xc-Mt5.text" = "エラー";
+"ns8-Xc-Mt5.text" = "Error";
 
 /* Class = "UIViewController"; title = "Edit Profile"; ObjectID = "pAj-lY-VDl"; */
-"pAj-lY-VDl.title" = "プロフィール編集";
+"pAj-lY-VDl.title" = "Edit Profile";
 
 /* Class = "UILabel"; text = "Change profile picture"; ObjectID = "tn2-Fk-uzR"; */
-"tn2-Fk-uzR.text" = "プロフィール画像変更";
+"tn2-Fk-uzR.text" = "Change profile picture";
