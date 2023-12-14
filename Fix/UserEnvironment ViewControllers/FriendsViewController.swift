@@ -54,6 +54,7 @@ class FriendsViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUpSearchController()
         setUpTableView()
         fetchAllUsers()
@@ -109,6 +110,7 @@ class FriendsViewController: UIViewController {
 
 // MARK: - TableView Delegate and DataSource
 extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredUsers.count
     }
