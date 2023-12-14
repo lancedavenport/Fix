@@ -1,99 +1,98 @@
+/* Class = "UILabel"; text = "Confirmer le mot de passe"; ObjectID = "5uj-ya-5dQ"; */
+"5uj-ya-5dQ.text" = "Confirmer le mot de passe";
 
-/* Class = "UILabel"; text = "Confirm password"; ObjectID = "5uj-ya-5dQ"; */
-"5uj-ya-5dQ.text" = "Confirm password";
+/* Class = "UINavigationItem"; title = "Modifier les données du profil"; ObjectID = "9nt-YZ-3qr"; */
+"9nt-YZ-3qr.title" = "Modifier les données du profil";
 
-/* Class = "UINavigationItem"; title = "Edit Profile Data"; ObjectID = "9nt-YZ-3qr"; */
-"9nt-YZ-3qr.title" = "Edit Profile Data";
+/* Class = "UIButton"; configuration.title = "Déconnexion"; ObjectID = "ABd-17-k5P"; */
+"ABd-17-k5P.configuration.title" = "Déconnexion";
 
-/* Class = "UIButton"; configuration.title = "Logout"; ObjectID = "ABd-17-k5P"; */
-"ABd-17-k5P.configuration.title" = "Logout";
+/* Class = "UIButton"; normalTitle = "Bouton"; ObjectID = "ABd-17-k5P"; */
+"ABd-17-k5P.normalTitle" = "Bouton";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ABd-17-k5P"; */
-"ABd-17-k5P.normalTitle" = "Button";
+/* Class = "UIButton"; configuration.title = "Changer la photo de profil"; ObjectID = "BAJ-gN-rTB"; */
+"BAJ-gN-rTB.configuration.title" = "Changer la photo de profil";
 
-/* Class = "UIButton"; configuration.title = "Change profile picture"; ObjectID = "BAJ-gN-rTB"; */
-"BAJ-gN-rTB.configuration.title" = "Change profile picture";
-
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BAJ-gN-rTB"; */
-"BAJ-gN-rTB.normalTitle" = "Button";
+/* Class = "UIButton"; normalTitle = "Bouton"; ObjectID = "BAJ-gN-rTB"; */
+"BAJ-gN-rTB.normalTitle" = "Bouton";
 
 /* Class = "UIButton"; configuration.title = "X"; ObjectID = "CKI-9F-jQ9"; */
 "CKI-9F-jQ9.configuration.title" = "X";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CKI-9F-jQ9"; */
-"CKI-9F-jQ9.normalTitle" = "Button";
+/* Class = "UIButton"; normalTitle = "Bouton"; ObjectID = "CKI-9F-jQ9"; */
+"CKI-9F-jQ9.normalTitle" = "Bouton";
 
-/* Class = "UILabel"; text = "Hi, there!"; ObjectID = "Hbg-oe-lSS"; */
-"Hbg-oe-lSS.text" = "Hi, there!";
+/* Class = "UILabel"; text = "Salut, là-bas !"; ObjectID = "Hbg-oe-lSS"; */
+"Hbg-oe-lSS.text" = "Salut, là-bas !";
 
-/* Class = "UISearchBar"; placeholder = "Search for Friends"; ObjectID = "LYx-tV-mvz"; */
-"LYx-tV-mvz.placeholder" = "Search for Friends";
+/* Class = "UISearchBar"; placeholder = "Rechercher des amis"; ObjectID = "LYx-tV-mvz"; */
+"LYx-tV-mvz.placeholder" = "Rechercher des amis";
 
-/* Class = "UINavigationItem"; title = "Delete Account"; ObjectID = "MH7-wz-2Mm"; */
-"MH7-wz-2Mm.title" = "Delete Account";
+/* Class = "UINavigationItem"; title = "Supprimer le compte"; ObjectID = "MH7-wz-2Mm"; */
+"MH7-wz-2Mm.title" = "Supprimer le compte";
 
-/* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "NGn-i0-44P"; */
-"NGn-i0-44P.placeholder" = "Confirm password";
+/* Class = "UITextField"; placeholder = "Confirmer le mot de passe"; ObjectID = "NGn-i0-44P"; */
+"NGn-i0-44P.placeholder" = "Confirmer le mot de passe";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SrA-KW-ovr"; */
-"SrA-KW-ovr.normalTitle" = "Button";
+/* Class = "UIButton"; normalTitle = "Bouton"; ObjectID = "SrA-KW-ovr"; */
+"SrA-KW-ovr.normalTitle" = "Bouton";
 
-/* Class = "UILabel"; text = "Edit Bio"; ObjectID = "TgC-hA-McR"; */
-"TgC-hA-McR.text" = "Edit Bio";
+/* Class = "UILabel"; text = "Modifier la biographie"; ObjectID = "TgC-hA-McR"; */
+"TgC-hA-McR.text" = "Modifier la biographie";
 
-/* Class = "UITextField"; placeholder = "Bio"; ObjectID = "ToL-tt-ZuJ"; */
-"ToL-tt-ZuJ.placeholder" = "Bio";
+/* Class = "UITextField"; placeholder = "Biographie"; ObjectID = "ToL-tt-ZuJ"; */
+"ToL-tt-ZuJ.placeholder" = "Biographie";
 
-/* Class = "UIButton"; configuration.title = "Edit Profile"; ObjectID = "ULJ-kZ-mpp"; */
-"ULJ-kZ-mpp.configuration.title" = "Edit Profile";
+/* Class = "UIButton"; configuration.title = "Modifier le profil"; ObjectID = "ULJ-kZ-mpp"; */
+"ULJ-kZ-mpp.configuration.title" = "Modifier le profil";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ULJ-kZ-mpp"; */
-"ULJ-kZ-mpp.normalTitle" = "Button";
+/* Class = "UIButton"; normalTitle = "Bouton"; ObjectID = "ULJ-kZ-mpp"; */
+"ULJ-kZ-mpp.normalTitle" = "Bouton";
 
-/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "VEN-Op-4ic"; */
-"VEN-Op-4ic.title" = "Settings";
+/* Class = "UITabBarItem"; title = "Paramètres"; ObjectID = "VEN-Op-4ic"; */
+"VEN-Op-4ic.title" = "Paramètres";
 
-/* Class = "UITabBarItem"; title = "Friends"; ObjectID = "Wsu-a0-oVq"; */
-"Wsu-a0-oVq.title" = "Friends";
+/* Class = "UITabBarItem"; title = "Amis"; ObjectID = "Wsu-a0-oVq"; */
+"Wsu-a0-oVq.title" = "Amis";
 
-/* Class = "UITabBarItem"; title = "Feed"; ObjectID = "YEl-Wc-C4s"; */
-"YEl-Wc-C4s.title" = "Feed";
+/* Class = "UITabBarItem"; title = "Flux"; ObjectID = "YEl-Wc-C4s"; */
+"YEl-Wc-C4s.title" = "Flux";
 
-/* Class = "UIButton"; configuration.title = "Delete Account"; ObjectID = "aZv-cF-HlG"; */
-"aZv-cF-HlG.configuration.title" = "Delete Account";
+/* Class = "UIButton"; configuration.title = "Supprimer le compte"; ObjectID = "aZv-cF-HlG"; */
+"aZv-cF-HlG.configuration.title" = "Supprimer le compte";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aZv-cF-HlG"; */
-"aZv-cF-HlG.normalTitle" = "Button";
+/* Class = "UIButton"; normalTitle = "Bouton"; ObjectID = "aZv-cF-HlG"; */
+"aZv-cF-HlG.normalTitle" = "Bouton";
 
-/* Class = "UIButton"; configuration.title = "Confirm changes"; ObjectID = "dpv-ht-dXF"; */
-"dpv-ht-dXF.configuration.title" = "Confirm changes";
+/* Class = "UIButton"; configuration.title = "Confirmer les modifications"; ObjectID = "dpv-ht-dXF"; */
+"dpv-ht-dXF.configuration.title" = "Confirmer les modifications";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dpv-ht-dXF"; */
-"dpv-ht-dXF.normalTitle" = "Button";
+/* Class = "UIButton"; normalTitle = "Bouton"; ObjectID = "dpv-ht-dXF"; */
+"dpv-ht-dXF.normalTitle" = "Bouton";
 
-/* Class = "UITextField"; placeholder = "Edit password"; ObjectID = "f1e-Ba-Trx"; */
-"f1e-Ba-Trx.placeholder" = "Edit password";
+/* Class = "UITextField"; placeholder = "Modifier le mot de passe"; ObjectID = "f1e-Ba-Trx"; */
+"f1e-Ba-Trx.placeholder" = "Modifier le mot de passe";
 
-/* Class = "UITextView"; text = "Effective Date: 12/12/2023\n\nThis Account Deletion Disclaimer (\"Disclaimer\") is provided by The Fix App (\"Company,\" \"we,\" \"us,\" or \"our\") to outline the terms and conditions associated with the deletion of a user account on our platform or website. By requesting the deletion of your account, you acknowledge and agree to the following:\n\nAccount Deletion Process: To delete your account, you must follow the established account deletion process provided on our platform or website. This process may require you to provide specific information or complete certain actions, such as confirming your identity.\n\nPermanent Deletion: When you request the deletion of your account, you understand and accept that your account and associated data will be permanently removed from our system. This includes all personal information, content, and any other data associated with your account.\n\nIrreversible Action: Account deletion is an irreversible action. Once your account is deleted, we cannot recover any of your data or restore your account in any way. It is your responsibility to ensure you have backed up any important information before initiating the account deletion process.\n\nThird-Party Accounts: If you have linked your account to third-party services or platforms (e.g., social media accounts), the deletion of your account with us may not automatically delete your accounts on these third-party services. You are responsible for managing and deleting your accounts on such third-party services separately.\n\nData Retention: Some data may be retained for a reasonable period as required by applicable laws or regulations, or for legitimate business purposes, even after the deletion of your account. We will handle any retained data in accordance with our Privacy Policy.\n\nNo Liability: You acknowledge that the Company shall not be liable for any loss, damage, or consequences arising from the deletion of your account, including but not limited to the loss of data, content, or access to our services.\n\nUser Responsibility: You are solely responsible for all actions taken on your account, including the initiation of the account deletion process. The Company will not be responsible for any unauthorized access or use of your account after you have initiated the deletion process.\n\nModification of Terms: The Company reserves the right to modify or update the terms of this Disclaimer at any time. Any changes will be effective upon posting on our platform or website, and it is your responsibility to review these terms periodically.\n\nBy proceeding with the account deletion process, you confirm that you have read, understood, and agreed to the terms and conditions outlined in this Disclaimer. If you do not agree with any part of this Disclaimer, please do not initiate the account deletion process.\n\nFor any questions or concerns regarding account deletion, please contact our customer support team.\n\n"; ObjectID = "gGt-L5-F6L"; */
-"gGt-L5-F6L.text" = "Effective Date: 12/12/2023\n\nThis Account Deletion Disclaimer (\"Disclaimer\") is provided by The Fix App (\"Company,\" \"we,\" \"us,\" or \"our\") to outline the terms and conditions associated with the deletion of a user account on our platform or website. By requesting the deletion of your account, you acknowledge and agree to the following:\n\nAccount Deletion Process: To delete your account, you must follow the established account deletion process provided on our platform or website. This process may require you to provide specific information or complete certain actions, such as confirming your identity.\n\nPermanent Deletion: When you request the deletion of your account, you understand and accept that your account and associated data will be permanently removed from our system. This includes all personal information, content, and any other data associated with your account.\n\nIrreversible Action: Account deletion is an irreversible action. Once your account is deleted, we cannot recover any of your data or restore your account in any way. It is your responsibility to ensure you have backed up any important information before initiating the account deletion process.\n\nThird-Party Accounts: If you have linked your account to third-party services or platforms (e.g., social media accounts), the deletion of your account with us may not automatically delete your accounts on these third-party services. You are responsible for managing and deleting your accounts on such third-party services separately.\n\nData Retention: Some data may be retained for a reasonable period as required by applicable laws or regulations, or for legitimate business purposes, even after the deletion of your account. We will handle any retained data in accordance with our Privacy Policy.\n\nNo Liability: You acknowledge that the Company shall not be liable for any loss, damage, or consequences arising from the deletion of your account, including but not limited to the loss of data, content, or access to our services.\n\nUser Responsibility: You are solely responsible for all actions taken on your account, including the initiation of the account deletion process. The Company will not be responsible for any unauthorized access or use of your account after you have initiated the deletion process.\n\nModification of Terms: The Company reserves the right to modify or update the terms of this Disclaimer at any time. Any changes will be effective upon posting on our platform or website, and it is your responsibility to review these terms periodically.\n\nBy proceeding with the account deletion process, you confirm that you have read, understood, and agreed to the terms and conditions outlined in this Disclaimer. If you do not agree with any part of this Disclaimer, please do not initiate the account deletion process.\n\nFor any questions or concerns regarding account deletion, please contact our customer support team.\n\n";
+/* Class = "UITextView"; text = "Date d'effet : 12/12/2023\n\nCette clause de suppression de compte (« Clause de non-responsabilité ») est fournie par The Fix App (« Société », « nous », « nous », « notre ») pour définir les termes et conditions associés à la suppression d'un compte utilisateur sur notre plateforme ou notre site web. En demandant la suppression de votre compte, vous reconnaissez et acceptez les éléments suivants :\n\nProcessus de suppression de compte : Pour supprimer votre compte, vous devez suivre le processus de suppression de compte établi sur notre plateforme ou notre site web. Ce processus peut nécessiter que vous fournissiez des informations spécifiques ou que vous accomplissiez certaines actions, telles que la confirmation de votre identité.\n\nSuppression permanente : Lorsque vous demandez la suppression de votre compte, vous comprenez et acceptez que votre compte et les données associées seront définitivement supprimés de notre système. Cela comprend toutes les informations personnelles, le contenu et toutes autres données associées à votre compte.\n\nAction irréversible : La suppression de compte est une action irréversible. Une fois que votre compte est supprimé, nous ne pouvons pas récupérer vos données ni restaurer votre compte de quelque manière que ce soit. Il vous incombe de sauvegarder toutes les informations importantes avant d'initier le processus de suppression de compte.\n\nComptes tiers : Si vous avez lié votre compte à des services ou des plateformes tiers (par exemple, des comptes de médias sociaux), la suppression de votre compte chez nous ne supprimera pas automatiquement vos comptes sur ces services tiers. Vous êtes responsable de la gestion et de la suppression de vos comptes sur ces services tiers séparément.\n\nConservation des données : Certaines données peuvent être conservées pendant une période raisonnable, conformément aux lois ou réglementations applicables ou à des fins légitimes, même après la suppression de votre compte. Nous traiterons toutes les données conservées conformément à notre politique de confidentialité.\n\nAucune responsabilité : Vous reconnaissez que la Société ne sera pas responsable des pertes, dommages ou conséquences résultant de la suppression de votre compte, notamment la perte de données, de contenu ou d'accès à nos services.\n\nResponsabilité de l'utilisateur : Vous êtes seul responsable de toutes les actions entreprises sur votre compte, y compris l'initiation du processus de suppression de compte. La Société ne sera pas responsable de tout accès ou utilisation non autorisés de votre compte après que vous avez initié le processus de suppression.\n\nModification des conditions : La Société se réserve le droit de modifier ou de mettre à jour les termes de cette Clause de non-responsabilité à tout moment. Les changements seront effectifs dès leur publication sur notre plateforme ou notre site web, et il vous incombe de revoir ces termes périodiquement.\n\nEn poursuivant le processus de suppression de compte, vous confirmez avoir lu, compris et accepté les termes et conditions énoncés dans cette Clause de non-responsabilité. Si vous n'êtes pas d'accord avec une partie de cette Clause de non-responsabilité, veuillez ne pas initier le processus de suppression de compte.\n\nPour toute question ou préoccupation concernant la suppression de compte, veuillez contacter notre service client.\n\n"; ObjectID = "gGt-L5-F6L"; */
+"gGt-L5-F6L.text" = "Date d'effet : 12/12/2023\n\nCette Clause de non-responsabilité concernant la suppression de compte (« Clause de non-responsabilité ») est fournie par The Fix App (« Société », « nous », « nous », « notre ») pour définir les termes et conditions associés à la suppression d'un compte utilisateur sur notre plateforme ou notre site web. En demandant la suppression de votre compte, vous reconnaissez et acceptez les éléments suivants :\n\nProcessus de suppression de compte : Pour supprimer votre compte, vous devez suivre le processus de suppression de compte établi sur notre plateforme ou notre site web. Ce processus peut nécessiter que vous fournissiez des informations spécifiques ou que vous accomplissiez certaines actions, telles que la confirmation de votre identité.\n\nSuppression permanente : Lorsque vous demandez la suppression de votre compte, vous comprenez et acceptez que votre compte et les données associées seront définitivement supprimés de notre système. Cela comprend toutes les informations personnelles, le contenu et toutes autres données associées à votre compte.\n\nAction irréversible : La suppression de compte est une action irréversible. Une fois que votre compte est supprimé, nous ne pouvons pas récupérer vos données ni restaurer votre compte de quelque manière que ce soit. Il vous incombe de sauvegarder toutes les informations importantes avant d'initier le processus de suppression de compte.\n\nComptes tiers : Si vous avez lié votre compte à des services ou des plateformes tiers (par exemple, des comptes de médias sociaux), la suppression de votre compte chez nous ne supprimera pas automatiquement vos comptes sur ces services tiers. Vous êtes responsable de la gestion et de la suppression de vos comptes sur ces services tiers séparément.\n\nConservation des données : Certaines données peuvent être conservées pendant une période raisonnable, conformément aux lois ou réglementations applicables ou à des fins légitimes, même après la suppression de votre compte. Nous traiterons toutes les données conservées conformément à notre politique de confidentialité.\n\nAucune responsabilité : Vous reconnaissez que la Société ne sera pas responsable des pertes, dommages ou conséquences résultant de la suppression de votre compte, notamment la perte de données, de contenu ou d'accès à nos services.\n\nResponsabilité de l'utilisateur : Vous êtes seul responsable de toutes les actions entreprises sur votre compte, y compris l'initiation du processus de suppression de compte. La Société ne sera pas responsable de tout accès ou utilisation non autorisés de votre compte après que vous avez initié le processus de suppression.\n\nModification des conditions : La Société se réserve le droit de modifier ou de mettre à jour les termes de cette Clause de non-responsabilité à tout moment. Les changements seront effectifs dès leur publication sur notre plateforme ou notre site web, et il vous incombe de revoir ces termes périodiquement.\n\nEn poursuivant le processus de suppression de compte, vous confirmez avoir lu, compris, et accepté les termes et conditions énoncés dans cette Clause de non-responsabilité. Si vous n'êtes pas d'accord avec une partie de cette Clause de non-responsabilité, veuillez ne pas initier le processus de suppression de compte.\n\nPour toute question ou préoccupation concernant la suppression de compte, veuillez contacter notre service client.\n\n";
 
-/* Class = "UIButton"; configuration.title = "Confirm"; ObjectID = "io4-vp-CXf"; */
-"io4-vp-CXf.configuration.title" = "Confirm";
+/* Class = "UIButton"; configuration.title = "Confirmer"; ObjectID = "io4-vp-CXf"; */
+"io4-vp-CXf.configuration.title" = "Confirmer";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "io4-vp-CXf"; */
-"io4-vp-CXf.normalTitle" = "Button";
+/* Class = "UIButton"; normalTitle = "Bouton"; ObjectID = "io4-vp-CXf"; */
+"io4-vp-CXf.normalTitle" = "Bouton";
 
-/* Class = "UILabel"; text = "Edit password"; ObjectID = "jue-Hr-2dv"; */
-"jue-Hr-2dv.text" = "Edit password";
+/* Class = "UILabel"; text = "Modifier le mot de passe"; ObjectID = "jue-Hr-2dv"; */
+"jue-Hr-2dv.text" = "Modifier le mot de passe";
 
-/* Class = "UITabBarItem"; title = "Fix"; ObjectID = "kU2-5Q-SC5"; */
-"kU2-5Q-SC5.title" = "Fix";
+/* Class = "UITabBarItem"; title = "Réparer"; ObjectID = "kU2-5Q-SC5"; */
+"kU2-5Q-SC5.title" = "Réparer";
 
-/* Class = "UILabel"; text = "Error"; ObjectID = "ns8-Xc-Mt5"; */
-"ns8-Xc-Mt5.text" = "Error";
+/* Class = "UILabel"; text = "Erreur"; ObjectID = "ns8-Xc-Mt5"; */
+"ns8-Xc-Mt5.text" = "Erreur";
 
-/* Class = "UIViewController"; title = "Edit Profile"; ObjectID = "pAj-lY-VDl"; */
-"pAj-lY-VDl.title" = "Edit Profile";
+/* Class = "UIViewController"; title = "Modifier le profil"; ObjectID = "pAj-lY-VDl"; */
+"pAj-lY-VDl.title" = "Modifier le profil";
 
-/* Class = "UILabel"; text = "Change profile picture"; ObjectID = "tn2-Fk-uzR"; */
-"tn2-Fk-uzR.text" = "Change profile picture";
+/* Class = "UILabel"; text = "Changer la photo de profil"; ObjectID = "tn2-Fk-uzR"; */
+"tn2-Fk-uzR.text" = "Changer la photo de profil";
