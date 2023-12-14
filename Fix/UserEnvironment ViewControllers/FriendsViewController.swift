@@ -134,4 +134,3 @@ extension FriendsViewController: UISearchResultsUpdating {
         filterUsers(for: searchText)
     }
 }
-
