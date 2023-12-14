@@ -1,89 +1,90 @@
+
 /* Class = "UILabel"; text = "The Fix App"; ObjectID = "0Hg-v1-OSV"; */
-"0Hg-v1-OSV.text" = "Fix App";
+"0Hg-v1-OSV.text" = "The Fix App";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "620-Ge-qJ1"; */
-"620-Ge-qJ1.placeholder" = "密碼";
+"620-Ge-qJ1.placeholder" = "Password";
 
 /* Class = "UILabel"; text = "Tell Us More"; ObjectID = "7cu-bO-eiy"; */
-"7cu-bO-eiy.text" = "告訴我們更多";
+"7cu-bO-eiy.text" = "Tell Us More";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "A94-sP-YMm"; */
-"A94-sP-YMm.text" = "錯誤";
+"A94-sP-YMm.text" = "Error";
 
 /* Class = "UIButton"; configuration.title = "Next"; ObjectID = "BfX-Ip-WfP"; */
-"BfX-Ip-WfP.configuration.title" = "下一步";
+"BfX-Ip-WfP.configuration.title" = "Next";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BfX-Ip-WfP"; */
-"BfX-Ip-WfP.normalTitle" = "按鈕";
+"BfX-Ip-WfP.normalTitle" = "Button";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "Ip3-Ve-lOR"; */
-"Ip3-Ve-lOR.placeholder" = "電子郵件";
+"Ip3-Ve-lOR.placeholder" = "Email";
 
 /* Class = "UILabel"; text = "Login to FIX"; ObjectID = "Ogp-26-mQO"; */
-"Ogp-26-mQO.text" = "登錄到 Fix";
+"Ogp-26-mQO.text" = "Login to FIX";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "S8W-qE-mEZ"; */
-"S8W-qE-mEZ.placeholder" = "電子郵件";
+"S8W-qE-mEZ.placeholder" = "Email";
 
 /* Class = "UITextField"; placeholder = "Comfirm Password"; ObjectID = "VsI-Kq-n0P"; */
-"VsI-Kq-n0P.placeholder" = "確認密碼";
+"VsI-Kq-n0P.placeholder" = "Comfirm Password";
 
 /* Class = "UIButton"; configuration.title = "Forget Password"; ObjectID = "Wtc-Jd-Oa3"; */
-"Wtc-Jd-Oa3.configuration.title" = "忘記密碼";
+"Wtc-Jd-Oa3.configuration.title" = "Forget Password";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Wtc-Jd-Oa3"; */
-"Wtc-Jd-Oa3.normalTitle" = "按鈕";
+"Wtc-Jd-Oa3.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "XTf-qF-ish"; */
-"XTf-qF-ish.configuration.title" = "註冊";
+"XTf-qF-ish.configuration.title" = "Sign Up";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XTf-qF-ish"; */
-"XTf-qF-ish.normalTitle" = "按鈕";
+"XTf-qF-ish.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Sign Up to Fix"; ObjectID = "Y1k-iS-YlS"; */
-"Y1k-iS-YlS.text" = "註冊到 Fix";
+"Y1k-iS-YlS.text" = "Sign Up to Fix";
 
 /* Class = "UITextField"; placeholder = "Something about yourself (Optional)"; ObjectID = "Y7l-ov-cjC"; */
-"Y7l-ov-cjC.placeholder" = "關於您的一些信息（可選）";
+"Y7l-ov-cjC.placeholder" = "Something about yourself (Optional)";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "Ypc-Tp-Kre"; */
-"Ypc-Tp-Kre.configuration.title" = "登錄";
+"Ypc-Tp-Kre.configuration.title" = "Login";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ypc-Tp-Kre"; */
-"Ypc-Tp-Kre.normalTitle" = "按鈕";
+"Ypc-Tp-Kre.normalTitle" = "Button";
 
 /* Class = "UITextField"; placeholder = "First Name"; ObjectID = "hBZ-qC-yNR"; */
-"hBZ-qC-yNR.placeholder" = "名字";
+"hBZ-qC-yNR.placeholder" = "First Name";
 
 /* Class = "UILabel"; text = "Choose a profile picture"; ObjectID = "hEH-NJ-ziO"; */
-"hEH-NJ-ziO.text" = "選擇個人資料圖片";
+"hEH-NJ-ziO.text" = "Choose a profile picture";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "hdJ-rG-Sf2"; */
-"hdJ-rG-Sf2.configuration.title" = "登錄";
+"hdJ-rG-Sf2.configuration.title" = "Login";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hdJ-rG-Sf2"; */
-"hdJ-rG-Sf2.normalTitle" = "按鈕";
+"hdJ-rG-Sf2.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Select Image"; ObjectID = "hge-OO-Skr"; */
-"hge-OO-Skr.configuration.title" = "選擇圖片";
+"hge-OO-Skr.configuration.title" = "Select Image";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hge-OO-Skr"; */
-"hge-OO-Skr.normalTitle" = "按鈕";
+"hge-OO-Skr.normalTitle" = "Button";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "jDr-yW-0uO"; */
-"jDr-yW-0uO.placeholder" = "密碼";
+"jDr-yW-0uO.placeholder" = "Password";
 
 /* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "pVq-HW-PAa"; */
-"pVq-HW-PAa.placeholder" = "姓";
+"pVq-HW-PAa.placeholder" = "Last Name";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "pkc-cm-tfY"; */
-"pkc-cm-tfY.text" = "錯誤";
+"pkc-cm-tfY.text" = "Error";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "sHF-v4-d9r"; */
-"sHF-v4-d9r.text" = "錯誤";
+"sHF-v4-d9r.text" = "Error";
 
 /* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "vDl-u6-w17"; */
-"vDl-u6-w17.configuration.title" = "註冊";
+"vDl-u6-w17.configuration.title" = "Sign Up";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vDl-u6-w17"; */
-"vDl-u6-w17.normalTitle" = "按鈕";
+"vDl-u6-w17.normalTitle" = "Button";

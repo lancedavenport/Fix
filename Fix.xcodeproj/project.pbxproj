@@ -94,6 +94,8 @@
 		6A3F79342B2974EC0080757E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UserEnvironment.strings"; sourceTree = "<group>"; };
 		6A3F79352B2976D60080757E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		6A3F79362B2976D60080757E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/UserEnvironment.strings"; sourceTree = "<group>"; };
+		6A3F79372B299AB90080757E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		6A3F79382B299AB90080757E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UserEnvironment.strings; sourceTree = "<group>"; };
 		790786942B17AE51008AE882 /* EditUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileViewController.swift; sourceTree = "<group>"; };
 		79A8C4392AF974430072F483 /* Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A8C43C2AF974430072F483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 				Base,
 				"zh-Hans",
 				"zh-Hant",
+				ja,
 			);
 			mainGroup = 79A8C4302AF974430072F483;
 			packageReferences = (
@@ -491,6 +494,7 @@
 				03FDAB2D2B0808A3004BF95E /* Base */,
 				6A3F79342B2974EC0080757E /* zh-Hans */,
 				6A3F79362B2976D60080757E /* zh-Hant */,
+				6A3F79382B299AB90080757E /* ja */,
 			);
 			name = UserEnvironment.storyboard;
 			sourceTree = "<group>";
@@ -501,6 +505,7 @@
 				79A8C4432AF974430072F483 /* Base */,
 				6A3F79332B2974EC0080757E /* zh-Hans */,
 				6A3F79352B2976D60080757E /* zh-Hant */,
+				6A3F79372B299AB90080757E /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
