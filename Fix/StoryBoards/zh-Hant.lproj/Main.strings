@@ -2,88 +2,88 @@
 "0Hg-v1-OSV.text" = "Fix App";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "620-Ge-qJ1"; */
-"620-Ge-qJ1.placeholder" = "密码";
+"620-Ge-qJ1.placeholder" = "密碼";
 
 /* Class = "UILabel"; text = "Tell Us More"; ObjectID = "7cu-bO-eiy"; */
-"7cu-bO-eiy.text" = "告诉我们更多";
+"7cu-bO-eiy.text" = "告訴我們更多";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "A94-sP-YMm"; */
-"A94-sP-YMm.text" = "错误";
+"A94-sP-YMm.text" = "錯誤";
 
 /* Class = "UIButton"; configuration.title = "Next"; ObjectID = "BfX-Ip-WfP"; */
 "BfX-Ip-WfP.configuration.title" = "下一步";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BfX-Ip-WfP"; */
-"BfX-Ip-WfP.normalTitle" = "按钮";
+"BfX-Ip-WfP.normalTitle" = "按鈕";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "Ip3-Ve-lOR"; */
-"Ip3-Ve-lOR.placeholder" = "电子邮件";
+"Ip3-Ve-lOR.placeholder" = "電子郵件";
 
 /* Class = "UILabel"; text = "Login to FIX"; ObjectID = "Ogp-26-mQO"; */
-"Ogp-26-mQO.text" = "登录到 FIX";
+"Ogp-26-mQO.text" = "登錄到 Fix";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "S8W-qE-mEZ"; */
-"S8W-qE-mEZ.placeholder" = "电子邮件";
+"S8W-qE-mEZ.placeholder" = "電子郵件";
 
 /* Class = "UITextField"; placeholder = "Comfirm Password"; ObjectID = "VsI-Kq-n0P"; */
-"VsI-Kq-n0P.placeholder" = "确认密码";
+"VsI-Kq-n0P.placeholder" = "確認密碼";
 
 /* Class = "UIButton"; configuration.title = "Forget Password"; ObjectID = "Wtc-Jd-Oa3"; */
-"Wtc-Jd-Oa3.configuration.title" = "忘记密码";
+"Wtc-Jd-Oa3.configuration.title" = "忘記密碼";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Wtc-Jd-Oa3"; */
-"Wtc-Jd-Oa3.normalTitle" = "按钮";
+"Wtc-Jd-Oa3.normalTitle" = "按鈕";
 
 /* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "XTf-qF-ish"; */
-"XTf-qF-ish.configuration.title" = "注册";
+"XTf-qF-ish.configuration.title" = "註冊";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XTf-qF-ish"; */
-"XTf-qF-ish.normalTitle" = "按钮";
+"XTf-qF-ish.normalTitle" = "按鈕";
 
 /* Class = "UILabel"; text = "Sign Up to Fix"; ObjectID = "Y1k-iS-YlS"; */
-"Y1k-iS-YlS.text" = "注册到 Fix";
+"Y1k-iS-YlS.text" = "註冊到 Fix";
 
 /* Class = "UITextField"; placeholder = "Something about yourself (Optional)"; ObjectID = "Y7l-ov-cjC"; */
-"Y7l-ov-cjC.placeholder" = "关于您的一些信息（可选）";
+"Y7l-ov-cjC.placeholder" = "關於您的一些信息（可選）";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "Ypc-Tp-Kre"; */
-"Ypc-Tp-Kre.configuration.title" = "登录";
+"Ypc-Tp-Kre.configuration.title" = "登錄";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ypc-Tp-Kre"; */
-"Ypc-Tp-Kre.normalTitle" = "按钮";
+"Ypc-Tp-Kre.normalTitle" = "按鈕";
 
 /* Class = "UITextField"; placeholder = "First Name"; ObjectID = "hBZ-qC-yNR"; */
 "hBZ-qC-yNR.placeholder" = "名字";
 
 /* Class = "UILabel"; text = "Choose a profile picture"; ObjectID = "hEH-NJ-ziO"; */
-"hEH-NJ-ziO.text" = "选择个人资料图片";
+"hEH-NJ-ziO.text" = "選擇個人資料圖片";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "hdJ-rG-Sf2"; */
-"hdJ-rG-Sf2.configuration.title" = "登录";
+"hdJ-rG-Sf2.configuration.title" = "登錄";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hdJ-rG-Sf2"; */
-"hdJ-rG-Sf2.normalTitle" = "按钮";
+"hdJ-rG-Sf2.normalTitle" = "按鈕";
 
 /* Class = "UIButton"; configuration.title = "Select Image"; ObjectID = "hge-OO-Skr"; */
-"hge-OO-Skr.configuration.title" = "选择图片";
+"hge-OO-Skr.configuration.title" = "選擇圖片";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hge-OO-Skr"; */
-"hge-OO-Skr.normalTitle" = "按钮";
+"hge-OO-Skr.normalTitle" = "按鈕";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "jDr-yW-0uO"; */
-"jDr-yW-0uO.placeholder" = "密码";
+"jDr-yW-0uO.placeholder" = "密碼";
 
 /* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "pVq-HW-PAa"; */
 "pVq-HW-PAa.placeholder" = "姓";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "pkc-cm-tfY"; */
-"pkc-cm-tfY.text" = "错误";
+"pkc-cm-tfY.text" = "錯誤";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "sHF-v4-d9r"; */
-"sHF-v4-d9r.text" = "错误";
+"sHF-v4-d9r.text" = "錯誤";
 
 /* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "vDl-u6-w17"; */
-"vDl-u6-w17.configuration.title" = "注册";
+"vDl-u6-w17.configuration.title" = "註冊";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vDl-u6-w17"; */
-"vDl-u6-w17.normalTitle" = "按钮";
+"vDl-u6-w17.normalTitle" = "按鈕";
