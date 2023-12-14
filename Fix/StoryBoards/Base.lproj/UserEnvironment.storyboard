@@ -252,7 +252,7 @@
                                         <rect key="frame" x="0.0" y="4" width="340" height="1336"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <mutableString key="text">Effective Date: 12/12/2023
+                                        <string key="text">Effective Date: 12/12/2023
 
 This Account Deletion Disclaimer ("Disclaimer") is provided by The Fix App ("Company," "we," "us," or "our") to outline the terms and conditions associated with the deletion of a user account on our platform or website. By requesting the deletion of your account, you acknowledge and agree to the following:
 
@@ -276,7 +276,7 @@ By proceeding with the account deletion process, you confirm that you have read,
 
 For any questions or concerns regarding account deletion, please contact our customer support team.
 
-</mutableString>
+</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -285,6 +285,17 @@ For any questions or concerns regarding account deletion, please contact our cus
                                 <viewLayoutGuide key="contentLayoutGuide" id="x04-TA-zSG"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="GEJ-LX-PgW"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="io4-vp-CXf">
+                                <rect key="frame" x="153" y="695" width="85" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="confirmChangesTapped:" destination="pAj-lY-VDl" eventType="touchUpInside" id="3y4-nf-QSH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1BM-yr-Y2L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -486,4 +497,4 @@ For any questions or concerns regarding account deletion, please contact our cus
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
-</document>
+</document>Add Button
