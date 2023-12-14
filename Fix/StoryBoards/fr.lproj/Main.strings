@@ -1,90 +1,89 @@
-
 /* Class = "UILabel"; text = "The Fix App"; ObjectID = "0Hg-v1-OSV"; */
-"0Hg-v1-OSV.text" = "The Fix App";
+"0Hg-v1-OSV.text" = "L'appli Fix";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "620-Ge-qJ1"; */
-"620-Ge-qJ1.placeholder" = "Password";
+"620-Ge-qJ1.placeholder" = "Mot de passe";
 
 /* Class = "UILabel"; text = "Tell Us More"; ObjectID = "7cu-bO-eiy"; */
-"7cu-bO-eiy.text" = "Tell Us More";
+"7cu-bO-eiy.text" = "Dites-nous en plus";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "A94-sP-YMm"; */
-"A94-sP-YMm.text" = "Error";
+"A94-sP-YMm.text" = "Erreur";
 
 /* Class = "UIButton"; configuration.title = "Next"; ObjectID = "BfX-Ip-WfP"; */
-"BfX-Ip-WfP.configuration.title" = "Next";
+"BfX-Ip-WfP.configuration.title" = "Suivant";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BfX-Ip-WfP"; */
-"BfX-Ip-WfP.normalTitle" = "Button";
+"BfX-Ip-WfP.normalTitle" = "Bouton";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "Ip3-Ve-lOR"; */
 "Ip3-Ve-lOR.placeholder" = "Email";
 
 /* Class = "UILabel"; text = "Login to FIX"; ObjectID = "Ogp-26-mQO"; */
-"Ogp-26-mQO.text" = "Login to FIX";
+"Ogp-26-mQO.text" = "Connectez-vous à FIX";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "S8W-qE-mEZ"; */
 "S8W-qE-mEZ.placeholder" = "Email";
 
-/* Class = "UITextField"; placeholder = "Comfirm Password"; ObjectID = "VsI-Kq-n0P"; */
-"VsI-Kq-n0P.placeholder" = "Comfirm Password";
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "VsI-Kq-n0P"; */
+"VsI-Kq-n0P.placeholder" = "Confirmez le mot de passe";
 
 /* Class = "UIButton"; configuration.title = "Forget Password"; ObjectID = "Wtc-Jd-Oa3"; */
-"Wtc-Jd-Oa3.configuration.title" = "Forget Password";
+"Wtc-Jd-Oa3.configuration.title" = "Mot de passe oublié";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Wtc-Jd-Oa3"; */
-"Wtc-Jd-Oa3.normalTitle" = "Button";
+"Wtc-Jd-Oa3.normalTitle" = "Bouton";
 
 /* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "XTf-qF-ish"; */
-"XTf-qF-ish.configuration.title" = "Sign Up";
+"XTf-qF-ish.configuration.title" = "S'inscrire";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XTf-qF-ish"; */
-"XTf-qF-ish.normalTitle" = "Button";
+"XTf-qF-ish.normalTitle" = "Bouton";
 
 /* Class = "UILabel"; text = "Sign Up to Fix"; ObjectID = "Y1k-iS-YlS"; */
-"Y1k-iS-YlS.text" = "Sign Up to Fix";
+"Y1k-iS-YlS.text" = "Inscrivez-vous à Fix";
 
 /* Class = "UITextField"; placeholder = "Something about yourself (Optional)"; ObjectID = "Y7l-ov-cjC"; */
-"Y7l-ov-cjC.placeholder" = "Something about yourself (Optional)";
+"Y7l-ov-cjC.placeholder" = "Quelque chose sur vous-même (facultatif)";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "Ypc-Tp-Kre"; */
-"Ypc-Tp-Kre.configuration.title" = "Login";
+"Ypc-Tp-Kre.configuration.title" = "Connexion";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ypc-Tp-Kre"; */
-"Ypc-Tp-Kre.normalTitle" = "Button";
+"Ypc-Tp-Kre.normalTitle" = "Bouton";
 
 /* Class = "UITextField"; placeholder = "First Name"; ObjectID = "hBZ-qC-yNR"; */
-"hBZ-qC-yNR.placeholder" = "First Name";
+"hBZ-qC-yNR.placeholder" = "Prénom";
 
 /* Class = "UILabel"; text = "Choose a profile picture"; ObjectID = "hEH-NJ-ziO"; */
-"hEH-NJ-ziO.text" = "Choose a profile picture";
+"hEH-NJ-ziO.text" = "Choisissez une photo de profil";
 
 /* Class = "UIButton"; configuration.title = "Login"; ObjectID = "hdJ-rG-Sf2"; */
-"hdJ-rG-Sf2.configuration.title" = "Login";
+"hdJ-rG-Sf2.configuration.title" = "Connexion";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hdJ-rG-Sf2"; */
-"hdJ-rG-Sf2.normalTitle" = "Button";
+"hdJ-rG-Sf2.normalTitle" = "Bouton";
 
 /* Class = "UIButton"; configuration.title = "Select Image"; ObjectID = "hge-OO-Skr"; */
-"hge-OO-Skr.configuration.title" = "Select Image";
+"hge-OO-Skr.configuration.title" = "Sélectionner une image";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hge-OO-Skr"; */
-"hge-OO-Skr.normalTitle" = "Button";
+"hge-OO-Skr.normalTitle" = "Bouton";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "jDr-yW-0uO"; */
-"jDr-yW-0uO.placeholder" = "Password";
+"jDr-yW-0uO.placeholder" = "Mot de passe";
 
 /* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "pVq-HW-PAa"; */
-"pVq-HW-PAa.placeholder" = "Last Name";
+"pVq-HW-PAa.placeholder" = "Nom de famille";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "pkc-cm-tfY"; */
-"pkc-cm-tfY.text" = "Error";
+"pkc-cm-tfY.text" = "Erreur";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "sHF-v4-d9r"; */
-"sHF-v4-d9r.text" = "Error";
+"sHF-v4-d9r.text" = "Erreur";
 
 /* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "vDl-u6-w17"; */
-"vDl-u6-w17.configuration.title" = "Sign Up";
+"vDl-u6-w17.configuration.title" = "S'inscrire";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vDl-u6-w17"; */
-"vDl-u6-w17.normalTitle" = "Button";
+"vDl-u6-w17.normalTitle" = "Bouton";
