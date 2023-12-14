@@ -1,26 +1,26 @@
 /* Class = "UILabel"; text = "Confirm password"; ObjectID = "5uj-ya-5dQ"; */
-"5uj-ya-5dQ.text" = "确认密码";
+"5uj-ya-5dQ.text" = "確認密碼";
 
 /* Class = "UINavigationItem"; title = "Edit Profile Data"; ObjectID = "9nt-YZ-3qr"; */
-"9nt-YZ-3qr.title" = "编辑个人资料";
+"9nt-YZ-3qr.title" = "編輯個人資料";
 
 /* Class = "UIButton"; configuration.title = "Logout"; ObjectID = "ABd-17-k5P"; */
-"ABd-17-k5P.configuration.title" = "退出登录";
+"ABd-17-k5P.configuration.title" = "登出";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ABd-17-k5P"; */
-"ABd-17-k5P.normalTitle" = "按钮";
+"ABd-17-k5P.normalTitle" = "按鈕";
 
 /* Class = "UIButton"; configuration.title = "Change profile picture"; ObjectID = "BAJ-gN-rTB"; */
-"BAJ-gN-rTB.configuration.title" = "更改个人资料图片";
+"BAJ-gN-rTB.configuration.title" = "更改個人資料圖片";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BAJ-gN-rTB"; */
-"BAJ-gN-rTB.normalTitle" = "按钮";
+"BAJ-gN-rTB.normalTitle" = "按鈕";
 
 /* Class = "UIButton"; configuration.title = "X"; ObjectID = "CKI-9F-jQ9"; */
 "CKI-9F-jQ9.configuration.title" = "X";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CKI-9F-jQ9"; */
-"CKI-9F-jQ9.normalTitle" = "按钮";
+"CKI-9F-jQ9.normalTitle" = "按鈕";
 
 /* Class = "UILabel"; text = "Hi, there!"; ObjectID = "Hbg-oe-lSS"; */
 "Hbg-oe-lSS.text" = "嗨，您好！";
@@ -29,70 +29,70 @@
 "LYx-tV-mvz.placeholder" = "搜索朋友";
 
 /* Class = "UINavigationItem"; title = "Delete Account"; ObjectID = "MH7-wz-2Mm"; */
-"MH7-wz-2Mm.title" = "删除帐户";
+"MH7-wz-2Mm.title" = "刪除帳戶";
 
 /* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "NGn-i0-44P"; */
-"NGn-i0-44P.placeholder" = "确认密码";
+"NGn-i0-44P.placeholder" = "確認密碼";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SrA-KW-ovr"; */
-"SrA-KW-ovr.normalTitle" = "按钮";
+"SrA-KW-ovr.normalTitle" = "按鈕";
 
 /* Class = "UILabel"; text = "Edit Bio"; ObjectID = "TgC-hA-McR"; */
-"TgC-hA-McR.text" = "编辑简介";
+"TgC-hA-McR.text" = "編輯簡介";
 
 /* Class = "UITextField"; placeholder = "Bio"; ObjectID = "ToL-tt-ZuJ"; */
-"ToL-tt-ZuJ.placeholder" = "简介";
+"ToL-tt-ZuJ.placeholder" = "簡介";
 
 /* Class = "UIButton"; configuration.title = "Edit Profile"; ObjectID = "ULJ-kZ-mpp"; */
-"ULJ-kZ-mpp.configuration.title" = "编辑个人资料";
+"ULJ-kZ-mpp.configuration.title" = "編輯個人資料";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ULJ-kZ-mpp"; */
-"ULJ-kZ-mpp.normalTitle" = "按钮";
+"ULJ-kZ-mpp.normalTitle" = "按鈕";
 
 /* Class = "UITabBarItem"; title = "Settings"; ObjectID = "VEN-Op-4ic"; */
-"VEN-Op-4ic.title" = "设置";
+"VEN-Op-4ic.title" = "設置";
 
 /* Class = "UITabBarItem"; title = "Friends"; ObjectID = "Wsu-a0-oVq"; */
 "Wsu-a0-oVq.title" = "朋友";
 
 /* Class = "UITabBarItem"; title = "Feed"; ObjectID = "YEl-Wc-C4s"; */
-"YEl-Wc-C4s.title" = "动态";
+"YEl-Wc-C4s.title" = "動態";
 
 /* Class = "UIButton"; configuration.title = "Delete Account"; ObjectID = "aZv-cF-HlG"; */
-"aZv-cF-HlG.configuration.title" = "删除帐户";
+"aZv-cF-HlG.configuration.title" = "刪除帳戶";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aZv-cF-HlG"; */
-"aZv-cF-HlG.normalTitle" = "按钮";
+"aZv-cF-HlG.normalTitle" = "按鈕";
 
 /* Class = "UIButton"; configuration.title = "Confirm changes"; ObjectID = "dpv-ht-dXF"; */
-"dpv-ht-dXF.configuration.title" = "确认更改";
+"dpv-ht-dXF.configuration.title" = "確認更改";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dpv-ht-dXF"; */
-"dpv-ht-dXF.normalTitle" = "按钮";
+"dpv-ht-dXF.normalTitle" = "按鈕";
 
 /* Class = "UITextField"; placeholder = "Edit password"; ObjectID = "f1e-Ba-Trx"; */
-"f1e-Ba-Trx.placeholder" = "编辑密码";
+"f1e-Ba-Trx.placeholder" = "編輯密碼";
 
 /* Class = "UITextView"; text = "Effective Date: 12/12/2023\n\nThis Account Deletion Disclaimer (\"Disclaimer\") is provided by The Fix App (\"Company,\" \"we,\" \"us,\" or \"our\") to outline the terms and conditions associated with the deletion of a user account on our platform or website. By requesting the deletion of your account, you acknowledge and agree to the following:\n\nAccount Deletion Process: To delete your account, you must follow the established account deletion process provided on our platform or website. This process may require you to provide specific information or complete certain actions, such as confirming your identity.\n\nPermanent Deletion: When you request the deletion of your account, you understand and accept that your account and associated data will be permanently removed from our system. This includes all personal information, content, and any other data associated with your account.\n\nIrreversible Action: Account deletion is an irreversible action. Once your account is deleted, we cannot recover any of your data or restore your account in any way. It is your responsibility to ensure you have backed up any important information before initiating the account deletion process.\n\nThird-Party Accounts: If you have linked your account to third-party services or platforms (e.g., social media accounts), the deletion of your account with us may not automatically delete your accounts on these third-party services. You are responsible for managing and deleting your accounts on such third-party services separately.\n\nData Retention: Some data may be retained for a reasonable period as required by applicable laws or regulations, or for legitimate business purposes, even after the deletion of your account. We will handle any retained data in accordance with our Privacy Policy.\n\nNo Liability: You acknowledge that the Company shall not be liable for any loss, damage, or consequences arising from the deletion of your account, including but not limited to the loss of data, content, or access to our services.\n\nUser Responsibility: You are solely responsible for all actions taken on your account, including the initiation of the account deletion process. The Company will not be responsible for any unauthorized access or use of your account after you have initiated the deletion process.\n\nModification of Terms: The Company reserves the right to modify or update the terms of this Disclaimer at any time. Any changes will be effective upon posting on our platform or website, and it is your responsibility to review these terms periodically.\n\nBy proceeding with the account deletion process, you confirm that you have read, understood, and agreed to the terms and conditions outlined in this Disclaimer. If you do not agree with any part of this Disclaimer, please do not initiate the account deletion process.\n\nFor any questions or concerns regarding account deletion, please contact our customer support team.\n\n"; ObjectID = "gGt-L5-F6L"; */
-"gGt-L5-F6L.text" = "生效日期：2023年12月12日\n\n本帐户删除免责声明（“免责声明”）由The Fix App（“公司”，“我们”，“我们”或“我们的”）提供，以概述与在我们的平台或网站上删除用户帐户相关的条款和条件。通过请求删除您的帐户，您承认并同意以下内容：\n\n帐户删除过程：要删除您的帐户，您必须按照我们在我们的平台或网站上提供的已建立的帐户删除过程。该过程可能需要您提供特定信息或完成某些操作，例如确认您的身份。\n\n永久删除：当您请求删除您的帐户时，您理解并接受您的帐户和相关数据将永久从我们的系统中删除。这包括与您的帐户相关的所有个人信息，内容以及与您的帐户相关的任何其他数据。\n\n不可逆行动：帐户删除是不可逆行动。一旦删除您的帐户，我们无法以任何方式恢复您的数据或恢复您的帐户。在启动帐户删除过程之前，请确保已备份了重要信息是您的责任。\n\n第三方帐户：如果您已将您的帐户链接到第三方服务或平台（例如社交媒体帐户），则我们删除您的帐户可能不会自动删除这些第三方服务上的帐户。您负责单独管理和删除这些第三方服务上的帐户。\n\n数据保留：即使在删除您的帐户后，根据适用的法律法规或合法业务目的，某些数据也可能被保留一段合理的时间。我们将根据我们的隐私政策处理任何保留的数据。\n\n免责声明：您承认公司不对删除您的帐户而引起的任何损失，损坏或后果承担责任，包括但不限于数据，内容或访问我们服务的丧失。\n\n用户责任：您完全负责您的帐户上的所有操作，包括启动帐户删除过程。一旦您启动删除过程，公司将不对未经授权的访问或使用您的帐户负责。\n\n条款修改：公司保留随时修改或更新本免责声明条款的权利。任何更改将在我们的平台或网站上发布时生效，您有责任定期查看这些条款。\n\n通过继续进行帐户删除过程，您确认已阅读，理解并同意本免责声明中概述的条款和条件。如果您不同意本免责声明的任何部分，请不要启动帐户删除过程。\n\n如有任何关于帐户删除的问题或疑虑，请联系我们的客户支持团队。\n\n";
+"gGt-L5-F6L.text" = "生效日期：2023年12月12日\n\n本帳戶刪除免責聲明（“免責聲明”）由The Fix App（“公司”，“我們”，“我們”或“我們的”）提供，以概述與在我們的平台或網站上刪除用戶帳戶相關的條款和條件。通過請求刪除您的帳戶，您承認並同意以下內容：\n\n帳戶刪除過程：要刪除您的帳戶，您必須遵循我們在我們的平台或網站上提供的已建立的帳戶刪除過程。該過程可能需要您提供特定信息或完成某些操作，例如確認您的身份。\n\n永久刪除：當您請求刪除您的帳戶時，您理解並接受您的帳戶和相關數據將永久從我們的系統中刪除。這包括與您的帳戶相關的所有個人信息，內容以及與您的帳戶相關的任何其他數據。\n\n不可逆行動：帳戶刪除是不可逆行動。一旦刪除您的帳戶，我們無法以任何方式恢復您的數據或恢復您的帳戶。在啟動帳戶刪除過程之前，請確保已備份了重要信息是您的責任。\n\n第三方帳戶：如果您已將您的帳戶鏈接到第三方服務或平台（例如社交媒體帳戶），則我們刪除您的帳戶可能不會自動刪除這些第三方服務上的帳戶。您負責單獨管理和刪除這些第三方服務上的帳戶。\n\n數據保留：即使在刪除您的帳戶後，根據適用的法律法規或合法業務目的，某些數據也可能被保留一段合理的時間。我們將根據我們的隱私政策處理任何保留的數據。\n\n免責聲明：您承認公司對刪除您的帳戶而引起的任何損失，損壞或後果不承擔責任，包括但不限於數據，內容或訪問我們服務的丟失。\n\n用戶責任：您完全負責您的帳戶上的所有操作，包括啟動帳戶刪除過程。一旦您啟動刪除過程，公司將不對未經授權的訪問或使用您的帳戶負責。\n\n條款修改：公司保留隨時修改或更新本免責聲明條款的權利。任何更改將在我們的平台或網站上發布時生效，您有責任定期查看這些條款。\n\n通過繼續進行帳戶刪除過程，您確認已閱讀，理解並同意本免責聲明中概述的條款和條件。如果您不同意本免責聲明的任何部分，請不要啟動帳戶刪除過程。\n\n有關帳戶刪除的任何問題或疑慮，請聯繫我們的客戶支持團隊。\n\n";
 
 /* Class = "UIButton"; configuration.title = "Confirm"; ObjectID = "io4-vp-CXf"; */
-"io4-vp-CXf.configuration.title" = "确认";
+"io4-vp-CXf.configuration.title" = "確認";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "io4-vp-CXf"; */
-"io4-vp-CXf.normalTitle" = "按钮";
+"io4-vp-CXf.normalTitle" = "按鈕";
 
 /* Class = "UILabel"; text = "Edit password"; ObjectID = "jue-Hr-2dv"; */
-"jue-Hr-2dv.text" = "编辑密码";
+"jue-Hr-2dv.text" = "編輯密碼";
 
 /* Class = "UITabBarItem"; title = "Fix"; ObjectID = "kU2-5Q-SC5"; */
-"kU2-5Q-SC5.title" = "修复";
+"kU2-5Q-SC5.title" = "修復";
 
 /* Class = "UILabel"; text = "Error"; ObjectID = "ns8-Xc-Mt5"; */
-"ns8-Xc-Mt5.text" = "错误";
+"ns8-Xc-Mt5.text" = "錯誤";
 
 /* Class = "UIViewController"; title = "Edit Profile"; ObjectID = "pAj-lY-VDl"; */
-"pAj-lY-VDl.title" = "编辑个人资料";
+"pAj-lY-VDl.title" = "編輯個人資料";
 
 /* Class = "UILabel"; text = "Change profile picture"; ObjectID = "tn2-Fk-uzR"; */
-"tn2-Fk-uzR.text" = "更改个人资料图片";
+"tn2-Fk-uzR.text" = "更改個人資料圖片";
