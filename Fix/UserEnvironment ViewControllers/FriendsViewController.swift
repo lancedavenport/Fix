@@ -54,7 +54,6 @@ class FriendsViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpSearchController()
         setUpTableView()
         fetchAllUsers()
