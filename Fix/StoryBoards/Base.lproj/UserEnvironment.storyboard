@@ -243,6 +243,14 @@
                     <view key="view" contentMode="scaleToFill" id="6uy-zX-c7S">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSA-17-AbY">
+                                <rect key="frame" x="25" y="120" width="340" height="488"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="x04-TA-zSG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="GEJ-LX-PgW"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1BM-yr-Y2L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -250,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Stu-jg-cev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208" y="1885"/>
+            <point key="canvasLocation" x="1207.6923076923076" y="1884.5971563981043"/>
         </scene>
         <!--Feed-->
         <scene sceneID="Ix4-U5-aah">
