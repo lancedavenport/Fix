@@ -13,6 +13,10 @@ class FixTests: XCTestCase {
         XCTAssertEqual(Fix.addNumbers(a: 2, b: 3), 5)
     }
 
+    func testGreeting() {
+        XCTAssertEqual(Fix.greeting(), "Hello, World!")
+    }
+
     func testExample() throws {
     }
 
