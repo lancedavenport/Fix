@@ -1,7 +1,6 @@
 import UIKit
 import Firebase
 
-
 // Define your custom PossibleFriendView
 class PossibleFriendView: UIView {
     // Add your UI elements here (e.g., labels, buttons)
@@ -111,12 +110,13 @@ class FriendsViewController: UIViewController {
 
 // MARK: - TableView Delegate and DataSource
 extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredUsers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! FriendTableViewCell
         let user = filteredUsers[indexPath.row]
         cell.textLabel?.text = "\(user.firstName) \(user.lastName)"
         return cell
@@ -135,4 +135,3 @@ extension FriendsViewController: UISearchResultsUpdating {
         filterUsers(for: searchText)
     }
 }
-

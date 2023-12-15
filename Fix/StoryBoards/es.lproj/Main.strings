@@ -1,0 +1,89 @@
+/* Clase = "UILabel"; texto = "The Fix App"; ObjectID = "0Hg-v1-OSV"; */
+"0Hg-v1-OSV.text" = "The Fix App";
+
+/* Clase = "UITextField"; marcador de posición = "Contraseña"; ObjectID = "620-Ge-qJ1"; */
+"620-Ge-qJ1.placeholder" = "Contraseña";
+
+/* Clase = "UILabel"; texto = "Cuéntanos más"; ObjectID = "7cu-bO-eiy"; */
+"7cu-bO-eiy.text" = "Cuéntanos más";
+
+/* Clase = "UILabel"; texto = "Error"; ObjectID = "A94-sP-YMm"; */
+"A94-sP-YMm.text" = "Error";
+
+/* Clase = "UIButton"; configuration.title = "Siguiente"; ObjectID = "BfX-Ip-WfP"; */
+"BfX-Ip-WfP.configuration.title" = "Siguiente";
+
+/* Clase = "UIButton"; normalTitle = "Botón"; ObjectID = "BfX-Ip-WfP"; */
+"BfX-Ip-WfP.normalTitle" = "Botón";
+
+/* Clase = "UITextField"; marcador de posición = "Correo electrónico"; ObjectID = "Ip3-Ve-lOR"; */
+"Ip3-Ve-lOR.placeholder" = "Correo electrónico";
+
+/* Clase = "UILabel"; texto = "Iniciar sesión en FIX"; ObjectID = "Ogp-26-mQO"; */
+"Ogp-26-mQO.text" = "Iniciar sesión en FIX";
+
+/* Clase = "UITextField"; marcador de posición = "Correo electrónico"; ObjectID = "S8W-qE-mEZ"; */
+"S8W-qE-mEZ.placeholder" = "Correo electrónico";
+
+/* Clase = "UITextField"; marcador de posición = "Confirmar contraseña"; ObjectID = "VsI-Kq-n0P"; */
+"VsI-Kq-n0P.placeholder" = "Confirmar contraseña";
+
+/* Clase = "UIButton"; configuration.title = "Olvidar contraseña"; ObjectID = "Wtc-Jd-Oa3"; */
+"Wtc-Jd-Oa3.configuration.title" = "Olvidar contraseña";
+
+/* Clase = "UIButton"; normalTitle = "Botón"; ObjectID = "Wtc-Jd-Oa3"; */
+"Wtc-Jd-Oa3.normalTitle" = "Botón";
+
+/* Clase = "UIButton"; configuration.title = "Registrarse"; ObjectID = "XTf-qF-ish"; */
+"XTf-qF-ish.configuration.title" = "Registrarse";
+
+/* Clase = "UIButton"; normalTitle = "Botón"; ObjectID = "XTf-qF-ish"; */
+"XTf-qF-ish.normalTitle" = "Botón";
+
+/* Clase = "UILabel"; texto = "Registrarse en Fix"; ObjectID = "Y1k-iS-YlS"; */
+"Y1k-iS-YlS.text" = "Registrarse en Fix";
+
+/* Clase = "UITextField"; marcador de posición = "Algo sobre ti (Opcional)"; ObjectID = "Y7l-ov-cjC"; */
+"Y7l-ov-cjC.placeholder" = "Algo sobre ti (Opcional)";
+
+/* Clase = "UIButton"; configuration.title = "Iniciar sesión"; ObjectID = "Ypc-Tp-Kre"; */
+"Ypc-Tp-Kre.configuration.title" = "Iniciar sesión";
+
+/* Clase = "UIButton"; normalTitle = "Botón"; ObjectID = "Ypc-Tp-Kre"; */
+"Ypc-Tp-Kre.normalTitle" = "Botón";
+
+/* Clase = "UITextField"; marcador de posición = "Nombre"; ObjectID = "hBZ-qC-yNR"; */
+"hBZ-qC-yNR.placeholder" = "Nombre";
+
+/* Clase = "UILabel"; texto = "Elegir una foto de perfil"; ObjectID = "hEH-NJ-ziO"; */
+"hEH-NJ-ziO.text" = "Elegir una foto de perfil";
+
+/* Clase = "UIButton"; configuration.title = "Iniciar sesión"; ObjectID = "hdJ-rG-Sf2"; */
+"hdJ-rG-Sf2.configuration.title" = "Iniciar sesión";
+
+/* Clase = "UIButton"; normalTitle = "Botón"; ObjectID = "hdJ-rG-Sf2"; */
+"hdJ-rG-Sf2.normalTitle" = "Botón";
+
+/* Clase = "UIButton"; configuration.title = "Seleccionar imagen"; ObjectID = "hge-OO-Skr"; */
+"hge-OO-Skr.configuration.title" = "Seleccionar imagen";
+
+/* Clase = "UIButton"; normalTitle = "Botón"; ObjectID = "hge-OO-Skr"; */
+"hge-OO-Skr.normalTitle" = "Botón";
+
+/* Clase = "UITextField"; marcador de posición = "Contraseña"; ObjectID = "jDr-yW-0uO"; */
+"jDr-yW-0uO.placeholder" = "Contraseña";
+
+/* Clase = "UITextField"; marcador de posición = "Apellido"; ObjectID = "pVq-HW-PAa"; */
+"pVq-HW-PAa.placeholder" = "Apellido";
+
+/* Clase = "UILabel"; texto = "Error"; ObjectID = "pkc-cm-tfY"; */
+"pkc-cm-tfY.text" = "Error";
+
+/* Clase = "UILabel"; texto = "Error"; ObjectID = "sHF-v4-d9r"; */
+"sHF-v4-d9r.text" = "Error";
+
+/* Clase = "UIButton"; configuration.title = "Registrarse"; ObjectID = "vDl-u6-w17"; */
+"vDl-u6-w17.configuration.title" = "Registrarse";
+
+/* Clase = "UIButton"; normalTitle = "Botón"; ObjectID = "vDl-u6-w17"; */
+"vDl-u6-w17.normalTitle" = "Botón";
