@@ -40,6 +40,15 @@ class MyAppUITests: XCTestCase {
         let app = XCUIApplication()
     }
 
+    func takeScreenshot(at step: String) {
+        let screenshot = XCUIScreen.main.screenshot()
+        let attachment = XCTAttachment(screenshot: screenshot)
+        attachment.name = "Screenshot_\(step)"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+        print("Captured screenshot at: \(step)")
+    }
+
     func testPerformanceExample() throws {
         measure {
         }
