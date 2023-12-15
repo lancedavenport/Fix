@@ -8,7 +8,7 @@ class FixTests: XCTestCase {
     }
 
     func testAddNumbersWithNegativeIntegers() {
-        XCTAssertEqual(Fix.addNumbers(a: -2, b: -3), -5)
+        XCTAssertEqual(Fix.addNumbers(a: -3, b: -4), -7)
     }
 
     func testAddNumbersWithZero() {
