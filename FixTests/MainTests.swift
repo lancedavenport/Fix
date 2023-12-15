@@ -9,6 +9,10 @@ class FixTests: XCTestCase {
     override func tearDownWithError() throws {
     }
 
+    func testAddNumbers() {
+        XCTAssertEqual(Fix.addNumbers(a: 2, b: 3), 5)
+    }
+
     func testExample() throws {
     }
 
