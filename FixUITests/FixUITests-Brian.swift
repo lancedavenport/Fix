@@ -7,6 +7,12 @@ class MyAppUITests: XCTestCase {
 
         let app = XCUIApplication()
         app.launch()
+
+        // Check if the correct test environment is set
+        checkEnvironment()
+
+        // Start monitoring network performance
+        startNetworkMonitoring()
     }
 
     override func tearDownWithError() throws {
