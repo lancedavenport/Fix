@@ -28,6 +28,10 @@ class MyAppUITests: XCTestCase {
         print("Starting network performance monitoring...")
     }
 
+    func stopNetworkMonitoring() {
+        print("Stopping network performance monitoring...")
+    }
+
     func testExample() throws {
         let app = XCUIApplication()
     }
