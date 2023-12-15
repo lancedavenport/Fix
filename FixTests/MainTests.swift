@@ -3,27 +3,19 @@ import XCTest
 
 class FixTests: XCTestCase {
 
-    override func setUpWithError() throws {
-    }
-
-    override func tearDownWithError() throws {
-    }
-
-    func testAddNumbers() {
+    func testAddNumbersWithPositiveIntegers() {
         XCTAssertEqual(Fix.addNumbers(a: 2, b: 3), 5)
     }
 
-    func testGreeting() {
+    func testAddNumbersWithNegativeIntegers() {
+        XCTAssertEqual(Fix.addNumbers(a: -2, b: -3), -5)
+    }
+
+    func testAddNumbersWithZero() {
+        XCTAssertEqual(Fix.addNumbers(a: 0, b: 0), 0)
+    }
+
+    func testGreetingReturnsCorrectString() {
         XCTAssertEqual(Fix.greeting(), "Hello, World!")
     }
-
-    func testExample() throws {
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-        }
-    }
-
 }
