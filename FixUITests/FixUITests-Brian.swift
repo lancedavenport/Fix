@@ -16,6 +16,8 @@ class MyAppUITests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
+        // Stop monitoring network performance
+        stopNetworkMonitoring()
     }
 
     func testExample() throws {
