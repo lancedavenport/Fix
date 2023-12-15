@@ -21,8 +21,11 @@ class MyAppUITests: XCTestCase {
     }
 
     func checkEnvironment() {
-        // Add code here to verify the configuration of the testing environment
         print("Checking test environment configuration...")
+    }
+
+    func startNetworkMonitoring() {
+        print("Starting network performance monitoring...")
     }
 
     func testExample() throws {
